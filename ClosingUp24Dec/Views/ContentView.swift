@@ -4,6 +4,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State private var isLoading = false
+    
     
     
     
@@ -16,7 +18,7 @@ struct ContentView: View {
                 
                 PlayerView()
                 
-                    .blur(radius: 0.5)
+                
                     .edgesIgnoringSafeArea(.all)
                     .overlay(
                         
@@ -25,22 +27,67 @@ struct ContentView: View {
                             
                             VStack {
                                 Spacer()
+                               
                                 NavigationLink(destination: RealEstateOne()) {
-                                    Text("Real Estate Documents")
-                                        .navigationBarTitle("")
-                                        .navigationBarHidden(true)
-                                        .padding(.all)
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color("rahRed"))
+                                        .padding(.horizontal)
+                                        .frame(width: 280, height: 70)
+                                        .shadow(color: .black, radius: 10, x: 3, y: 3   )
+                                    
+                                        .overlay(HStack {
+                                            Image(systemName: "checkmark.square")
+                                                .foregroundColor(.black)
+                                            Text("Real Estate Documents")
+                                                .font(Font.custom("PaytoneOne-Regular", size: 16))
+                                            
+                                                .foregroundColor(.black)
+                                                .navigationBarTitle("")
+                                                .navigationBarHidden(true)
+                                                
+                                        })
+                                    
+                                    
+                                    
+                                }
+//                                Spacer()
+                                
+                                
+                                NavigationLink(destination: LoanDocs()) {
+                                    RoundedRectangle(cornerRadius: 25)
+                                        
+                                        .fill(Color("rahRed"))
+                                        .padding(.horizontal)
+                                        .frame(width: 280, height: 70)
+                                        .shadow(color: .black, radius: 10, x: 3, y: 3   )
+                                        .overlay(HStack {
+                                            Image(systemName: "square")
+                                                .foregroundColor(.black)
+                                                
+                                            Text("Mortgage Documents")
+                                                .font(Font.custom("PaytoneOne-Regular", size: 16))
+                                            
+                                                .foregroundColor(.black)
+                                                .navigationBarTitle("")
+                                                .navigationBarHidden(true)
+                                                
+                                        })
+                                    
+                                    
                                     
                                 }
                                 Spacer()
-                                
-                                NavigationLink(destination: LoanDocs()) {
-                                    Text("Mortgage Documents")
-                                        .navigationBarTitle("")
-                                        .navigationBarHidden(true)
-                                        .padding(.all)
-                                }
                                 Spacer()
+                                Spacer()
+                                
+                                Image("logobozo")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 300)
+                                    .padding(.all)
+                                    .opacity(0.8)
+                                
+                                
                             }
                             Spacer()
                             
@@ -63,6 +110,10 @@ struct ContentView: View {
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
+    
+    
+    
+    
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {

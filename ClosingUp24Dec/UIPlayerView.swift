@@ -30,7 +30,7 @@ class UIVideoPlayer: UIView {
         guard let url = URL(string: "https://github.com/dpayne5532/BP/blob/main/video4.mp4?raw=true") else { return }
 
         let player = AVPlayer(url: url)
-        player.isMuted = true
+        player.isMuted = false
         
         player.play()
       
