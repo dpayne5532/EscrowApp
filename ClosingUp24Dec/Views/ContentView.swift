@@ -76,14 +76,8 @@ struct ContentView: View {
                             Spacer()
                             VStack {
                                 Spacer()
-                                
-                           
-                             
-                                
-                                
                                 Spacer()
-                                
-                                NavigationLink(destination: LoanDocs()) {
+                                NavigationLink(destination: HelpView()) {
                                     RoundedRectangle(cornerRadius: 25)
                                         .fill(Color("rahRed"))
                                         .padding(.all)
@@ -92,7 +86,6 @@ struct ContentView: View {
                                         .overlay(HStack {
                                             Image(systemName: "questionmark.circle.fill")
                                                 .foregroundColor(.black)
-                                            
                                             Text("Help")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
                                                 .foregroundColor(.black)
@@ -100,13 +93,6 @@ struct ContentView: View {
                                                 .navigationBarHidden(true)
                                         })
                                 }
-                                
-//                                Image("logobozo")
-//                                    .resizable()
-//                                    .aspectRatio(contentMode: .fit)
-//                                    .frame(width: 300)
-//                                    .padding(.all)
-//                                    .opacity(0.8)
                             }
                         })
             }
