@@ -10,6 +10,8 @@ import SwiftUI
 import AVFoundation
 
 struct PlayerView: UIViewRepresentable {
+    
+    
 
     func makeUIView(context: Context) -> UIVideoPlayer {
         return UIVideoPlayer()
@@ -30,9 +32,14 @@ class UIVideoPlayer: UIView {
         guard let url = URL(string: "https://github.com/dpayne5532/BP/blob/main/video4.mp4?raw=true") else { return }
 
         let player = AVPlayer(url: url)
-        player.isMuted = false
+        player.isMuted = true
         
         player.play()
+        
+           
+        
+        
+        
       
         playerLayer.player = player
         playerLayer.videoGravity = AVLayerVideoGravity(rawValue: AVLayerVideoGravity.resizeAspectFill.rawValue)

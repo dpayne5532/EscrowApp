@@ -18,7 +18,7 @@ struct ContentView: View {
                 
                 PlayerView()
                 
-                
+                   
                     .edgesIgnoringSafeArea(.all)
                     .overlay(
                         
@@ -27,7 +27,30 @@ struct ContentView: View {
                             
                             VStack {
                                 Spacer()
-                               
+                                
+                                NavigationLink(destination: RealEstateOne()) {
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color("rahRed"))
+                                        .padding(.horizontal)
+                                        .frame(width: 280, height: 70)
+                                        .shadow(color: .black, radius: 10, x: 3, y: 3   )
+                                    
+                                        .overlay(HStack {
+                                            Image(systemName: "checkmark.square")
+                                                .foregroundColor(.black)
+                                            Text("Personal Documents")
+                                                .font(Font.custom("PaytoneOne-Regular", size: 16))
+                                            
+                                                .foregroundColor(.black)
+                                                .navigationBarTitle("")
+                                                .navigationBarHidden(true)
+                                            
+                                        })
+                                    
+                                    
+                                    
+                                }
+                                
                                 NavigationLink(destination: RealEstateOne()) {
                                     RoundedRectangle(cornerRadius: 25)
                                         .fill(Color("rahRed"))
@@ -44,18 +67,18 @@ struct ContentView: View {
                                                 .foregroundColor(.black)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
-                                                
+                                            
                                         })
                                     
                                     
                                     
                                 }
-//                                Spacer()
+                                //                                Spacer()
                                 
                                 
                                 NavigationLink(destination: LoanDocs()) {
                                     RoundedRectangle(cornerRadius: 25)
-                                        
+                                    
                                         .fill(Color("rahRed"))
                                         .padding(.horizontal)
                                         .frame(width: 280, height: 70)
@@ -63,14 +86,14 @@ struct ContentView: View {
                                         .overlay(HStack {
                                             Image(systemName: "square")
                                                 .foregroundColor(.black)
-                                                
+                                            
                                             Text("Mortgage Documents")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
                                             
                                                 .foregroundColor(.black)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
-                                                
+                                            
                                         })
                                     
                                     
@@ -110,8 +133,6 @@ struct ContentView: View {
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
-    
-    
     
     
     
