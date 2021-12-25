@@ -11,7 +11,7 @@ struct LoanDocs: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    
+        
     var body: some View {
         
         
@@ -36,6 +36,7 @@ struct LoanDocs: View {
             .navigationBarTitle("")
             .navigationBarBackButtonHidden(true)
             .navigationBarHidden(true)
+            
         }
         
     }

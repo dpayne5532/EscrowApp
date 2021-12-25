@@ -5,80 +5,49 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var isLoading = false
-    
-    
-    
-    
     var body: some View {
-        
         NavigationView {
             ZStack {
-                
-                
-                
                 PlayerView()
-                
-                   
                     .edgesIgnoringSafeArea(.all)
                     .overlay(
-                        
                         HStack {
-                            
-                            
                             VStack {
                                 Spacer()
-                                
-                                NavigationLink(destination: RealEstateOne()) {
+                                NavigationLink(destination: PersonalDocuments()) {
                                     RoundedRectangle(cornerRadius: 25)
                                         .fill(Color("rahRed"))
                                         .padding(.horizontal)
                                         .frame(width: 280, height: 70)
                                         .shadow(color: .black, radius: 10, x: 3, y: 3   )
-                                    
                                         .overlay(HStack {
-                                            Image(systemName: "checkmark.square")
+                                            Image(systemName: "square")
                                                 .foregroundColor(.black)
                                             Text("Personal Documents")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
-                                            
                                                 .foregroundColor(.black)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
-                                            
                                         })
-                                    
-                                    
-                                    
                                 }
-                                
                                 NavigationLink(destination: RealEstateOne()) {
                                     RoundedRectangle(cornerRadius: 25)
                                         .fill(Color("rahRed"))
                                         .padding(.horizontal)
                                         .frame(width: 280, height: 70)
                                         .shadow(color: .black, radius: 10, x: 3, y: 3   )
-                                    
                                         .overlay(HStack {
-                                            Image(systemName: "checkmark.square")
+                                            Image(systemName: "square")
                                                 .foregroundColor(.black)
                                             Text("Real Estate Documents")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
-                                            
                                                 .foregroundColor(.black)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
-                                            
                                         })
-                                    
-                                    
-                                    
                                 }
-                                //                                Spacer()
-                                
-                                
                                 NavigationLink(destination: LoanDocs()) {
                                     RoundedRectangle(cornerRadius: 25)
-                                    
                                         .fill(Color("rahRed"))
                                         .padding(.horizontal)
                                         .frame(width: 280, height: 70)
@@ -89,53 +58,61 @@ struct ContentView: View {
                                             
                                             Text("Mortgage Documents")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
-                                            
                                                 .foregroundColor(.black)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
-                                            
                                         })
-                                    
-                                    
-                                    
                                 }
                                 Spacer()
                                 Spacer()
                                 Spacer()
-                                
                                 Image("logobozo")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 300)
                                     .padding(.all)
                                     .opacity(0.8)
-                                
-                                
                             }
                             Spacer()
-                            
-                            
-                            
-                            
+                            VStack {
+                                Spacer()
+                                
+                           
+                             
+                                
+                                
+                                Spacer()
+                                
+                                NavigationLink(destination: LoanDocs()) {
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color("rahRed"))
+                                        .padding(.all)
+                                        .frame(width: 130, height: 80)
+                                        .shadow(color: .black, radius: 10, x: 3, y: 3   )
+                                        .overlay(HStack {
+                                            Image(systemName: "questionmark.circle.fill")
+                                                .foregroundColor(.black)
+                                            
+                                            Text("Help")
+                                                .font(Font.custom("PaytoneOne-Regular", size: 16))
+                                                .foregroundColor(.black)
+                                                .navigationBarTitle("")
+                                                .navigationBarHidden(true)
+                                        })
+                                }
+                                
+//                                Image("logobozo")
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .frame(width: 300)
+//                                    .padding(.all)
+//                                    .opacity(0.8)
+                            }
                         })
-                
-                
-                
-                
-                
-                //                            Text("Real Estate Documents")
-                //                                .navigationBarTitle("")
-                //                                .navigationBarHidden(true)
-                //                                .padding(.all)
-                
-                
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
-    
-    
-    
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()

@@ -18,6 +18,7 @@
 		36CF8AA127768A61007E68A3 /* UIPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CF8AA027768A61007E68A3 /* UIPlayerView.swift */; };
 		36EAA9692776DF1700AC97B2 /* PaytoneOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36EAA9682776DF1700AC97B2 /* PaytoneOne-Regular.ttf */; };
 		36EAA96C2776F0E900AC97B2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36EAA96B2776F0E900AC97B2 /* Launch Screen.storyboard */; };
+		36EAA96E2777A4FE00AC97B2 /* PersonalDocuments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAA96D2777A4FE00AC97B2 /* PersonalDocuments.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		36EAA9682776DF1700AC97B2 /* PaytoneOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PaytoneOne-Regular.ttf"; sourceTree = "<group>"; };
 		36EAA96A2776DF2C00AC97B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		36EAA96B2776F0E900AC97B2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		36EAA96D2777A4FE00AC97B2 /* PersonalDocuments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDocuments.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				36CF8A902776896A007E68A3 /* ContentView.swift */,
 				364BC2E9277690E900AE7478 /* RealEstateOne.swift */,
 				364BC30D2776CAE400AE7478 /* LoanDocs.swift */,
+				36EAA96D2777A4FE00AC97B2 /* PersonalDocuments.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36EAA96E2777A4FE00AC97B2 /* PersonalDocuments.swift in Sources */,
 				36CF8A9D277689EF007E68A3 /* AppDelegate.swift in Sources */,
 				36CF8A912776896A007E68A3 /* ContentView.swift in Sources */,
 				36CF8A8F2776896A007E68A3 /* ClosingUp24DecApp.swift in Sources */,
