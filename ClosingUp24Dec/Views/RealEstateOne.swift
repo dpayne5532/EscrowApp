@@ -8,10 +8,21 @@
 import SwiftUI
 
 struct RealEstateOne: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        VStack {
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Text("POP")
+                    }
+                }
+                .navigationBarTitle("")
+                .navigationBarBackButtonHidden(true)
+                .navigationBarHidden(true)
+            }
+        }
 
 struct RealEstateOne_Previews: PreviewProvider {
     static var previews: some View {

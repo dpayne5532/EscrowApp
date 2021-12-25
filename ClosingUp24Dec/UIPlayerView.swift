@@ -7,6 +7,18 @@
 
 import AVKit
 import SwiftUI
+import AVFoundation
+
+struct PlayerView: UIViewRepresentable {
+
+    func makeUIView(context: Context) -> UIVideoPlayer {
+        return UIVideoPlayer()
+    }
+
+    func updateUIView(_ uiView: UIVideoPlayer, context: Context) {
+        
+    }
+}
 
 class UIVideoPlayer: UIView {
     
@@ -39,13 +51,4 @@ class UIVideoPlayer: UIView {
     
 }
 
-struct PlayerView: UIViewRepresentable {
 
-    func makeUIView(context: Context) -> UIVideoPlayer {
-        return UIVideoPlayer()
-    }
-
-    func updateUIView(_ uiView: UIVideoPlayer, context: Context) {
-        
-    }
-}
