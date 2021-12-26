@@ -23,8 +23,14 @@ class UIVideoPlayer: UIView {
     var playerLayer = AVPlayerLayer()
     override init(frame: CGRect) {
         super.init(frame: frame)
-        guard let url = URL(string: "https://github.com/dpayne5532/BP/blob/main/video4.mp4?raw=true") else { return }
+        
+        
+         // guard let url = URL(string: "https://github.com/dpayne5532/BP/blob/main/video4.mp4?raw=true") else { return }
+        guard let url = URL(string: "https://github.com/dpayne5532/BP/blob/main/videorah.mp4?raw=true") else { return }
+        
         let player = AVPlayer(url: url)
+        
+        
         player.isMuted = true
         player.play()
         playerLayer.player = player
