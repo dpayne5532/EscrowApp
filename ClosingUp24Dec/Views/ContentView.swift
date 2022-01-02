@@ -1,10 +1,14 @@
 import SwiftUI
+import AVFoundation
 
-
-
+class ddd : ObservableObject {
+    
+    @Published var eee = false
+    
+}
 struct ContentView: View {
     
-   
+        
     var body: some View {
         NavigationView {
             ZStack {
@@ -21,7 +25,7 @@ struct ContentView: View {
                                         .frame(width: 280, height: 70)
                                         .shadow(color: .black, radius: 10, x: 3, y: 3   )
                                         .overlay(HStack {
-                                            Image(systemName: "square")
+                                            Image(systemName: "checkmark.square")
                                                 .foregroundColor(.black)
                                             Text("Personal Documents")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
@@ -37,7 +41,7 @@ struct ContentView: View {
                                         .frame(width: 280, height: 70)
                                         .shadow(color: .black, radius: 10, x: 3, y: 3   )
                                         .overlay(HStack {
-                                            Image(systemName: "square")
+                                            Image(systemName: "checkmark.square")
                                                 .foregroundColor(.black)
                                             Text("Real Estate Documents")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
@@ -46,6 +50,7 @@ struct ContentView: View {
                                                 .navigationBarHidden(true)
                                         })
                                 }
+                                
                                 NavigationLink(destination: LoanDocs()) {
                                     RoundedRectangle(cornerRadius: 25)
                                         .fill(Color("rahRed"))
@@ -53,7 +58,7 @@ struct ContentView: View {
                                         .frame(width: 280, height: 70)
                                         .shadow(color: .black, radius: 10, x: 3, y: 3   )
                                         .overlay(HStack {
-                                            Image(systemName: "square")
+                                            Image(systemName: "checkmark.square")
                                                 .foregroundColor(.black)
                                             
                                             Text("Mortgage Documents")
@@ -63,6 +68,7 @@ struct ContentView: View {
                                                 .navigationBarHidden(true)
                                         })
                                 }
+                                
                                 Spacer()
                                 Spacer()
                                 Spacer()
@@ -70,10 +76,12 @@ struct ContentView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 300)
-                                    .padding(.all)
+                                    .padding()
+                                
                                     .opacity(0.8)
                             }
                             Spacer()
+                            
                             VStack {
                                 Spacer()
                                 Spacer()
@@ -95,6 +103,8 @@ struct ContentView: View {
                                 }
                             }
                         })
+                
+                
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())

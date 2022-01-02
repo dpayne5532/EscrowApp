@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		364BC2EA277690E900AE7478 /* RealEstateOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364BC2E9277690E900AE7478 /* RealEstateOne.swift */; };
 		364BC30E2776CAE400AE7478 /* LoanDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364BC30D2776CAE400AE7478 /* LoanDocs.swift */; };
+		36587E50277FE79600ED0B9C /* VestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36587E4F277FE79600ED0B9C /* VestingView.swift */; };
+		36587E52277FE7BD00ED0B9C /* TransferDecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36587E51277FE7BD00ED0B9C /* TransferDecView.swift */; };
+		36587E54277FE80B00ED0B9C /* ClosingInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36587E53277FE80B00ED0B9C /* ClosingInstructionsView.swift */; };
+		36587E56277FE83100ED0B9C /* AffidavitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36587E55277FE83100ED0B9C /* AffidavitView.swift */; };
 		36CF8A8F2776896A007E68A3 /* ClosingUp24DecApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CF8A8E2776896A007E68A3 /* ClosingUp24DecApp.swift */; };
 		36CF8A912776896A007E68A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CF8A902776896A007E68A3 /* ContentView.swift */; };
 		36CF8A932776896C007E68A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36CF8A922776896C007E68A3 /* Assets.xcassets */; };
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		364BC2E9277690E900AE7478 /* RealEstateOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateOne.swift; sourceTree = "<group>"; };
 		364BC30D2776CAE400AE7478 /* LoanDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDocs.swift; sourceTree = "<group>"; };
+		36587E4F277FE79600ED0B9C /* VestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VestingView.swift; sourceTree = "<group>"; };
+		36587E51277FE7BD00ED0B9C /* TransferDecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDecView.swift; sourceTree = "<group>"; };
+		36587E53277FE80B00ED0B9C /* ClosingInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosingInstructionsView.swift; sourceTree = "<group>"; };
+		36587E55277FE83100ED0B9C /* AffidavitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffidavitView.swift; sourceTree = "<group>"; };
 		36CF8A8B2776896A007E68A3 /* ClosingUp24Dec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClosingUp24Dec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CF8A8E2776896A007E68A3 /* ClosingUp24DecApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosingUp24DecApp.swift; sourceTree = "<group>"; };
 		36CF8A902776896A007E68A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,10 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				36CF8A902776896A007E68A3 /* ContentView.swift */,
+				36EAA96D2777A4FE00AC97B2 /* PersonalDocuments.swift */,
 				364BC2E9277690E900AE7478 /* RealEstateOne.swift */,
 				364BC30D2776CAE400AE7478 /* LoanDocs.swift */,
-				36EAA96D2777A4FE00AC97B2 /* PersonalDocuments.swift */,
 				36EAA96F2777BD6000AC97B2 /* HelpView.swift */,
+				36587E4F277FE79600ED0B9C /* VestingView.swift */,
+				36587E51277FE7BD00ED0B9C /* TransferDecView.swift */,
+				36587E53277FE80B00ED0B9C /* ClosingInstructionsView.swift */,
+				36587E55277FE83100ED0B9C /* AffidavitView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,8 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36587E52277FE7BD00ED0B9C /* TransferDecView.swift in Sources */,
 				36EAA96E2777A4FE00AC97B2 /* PersonalDocuments.swift in Sources */,
 				36CF8A9D277689EF007E68A3 /* AppDelegate.swift in Sources */,
+				36587E56277FE83100ED0B9C /* AffidavitView.swift in Sources */,
+				36587E54277FE80B00ED0B9C /* ClosingInstructionsView.swift in Sources */,
 				36CF8A912776896A007E68A3 /* ContentView.swift in Sources */,
 				36CF8A8F2776896A007E68A3 /* ClosingUp24DecApp.swift in Sources */,
 				36EAA9702777BD6000AC97B2 /* HelpView.swift in Sources */,
@@ -193,6 +208,7 @@
 				364BC2EA277690E900AE7478 /* RealEstateOne.swift in Sources */,
 				364BC30E2776CAE400AE7478 /* LoanDocs.swift in Sources */,
 				36CF8A9F27768A13007E68A3 /* SceneDelegate.swift in Sources */,
+				36587E50277FE79600ED0B9C /* VestingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

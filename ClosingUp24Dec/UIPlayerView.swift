@@ -36,6 +36,8 @@ class UIVideoPlayer: UIView {
         playerLayer.player = player
         playerLayer.videoGravity = AVLayerVideoGravity(rawValue: AVLayerVideoGravity.resizeAspectFill.rawValue)
         layer.addSublayer(playerLayer)
+            
+        
     }
     override func layoutSubviews() {
         super.layoutSubviews()

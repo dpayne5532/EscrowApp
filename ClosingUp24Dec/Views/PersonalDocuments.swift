@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+let steve = ContentView()
+
+
 struct PersonalDocuments: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
@@ -16,6 +19,7 @@ struct PersonalDocuments: View {
             
             VStack {
                 Button(action: {
+                   
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("PUT DL PARSER HERE!")
