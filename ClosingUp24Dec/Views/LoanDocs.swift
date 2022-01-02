@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoanDocs: View {
-    var Taco = "Sing you bastard" 
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     
