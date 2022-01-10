@@ -1,14 +1,11 @@
 import SwiftUI
 import AVFoundation
 
-class ddd : ObservableObject {
-    
-    @Published var eee = false
-    
-}
+
 struct ContentView: View {
     
-        
+    @State var isDone = true
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -16,6 +13,14 @@ struct ContentView: View {
                     .edgesIgnoringSafeArea(.all)
                     .overlay(
                         HStack {
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             VStack {
                                 Spacer()
                                 NavigationLink(destination: PersonalDocuments()) {
@@ -25,7 +30,7 @@ struct ContentView: View {
                                         .frame(width: 280, height: 70)
                                         .shadow(color: .black, radius: 10, x: 3, y: 3   )
                                         .overlay(HStack {
-                                            Image(systemName: "checkmark.square")
+                                            Image(systemName: self.isDone ? "checkmark.square" : "square")
                                                 .foregroundColor(.black)
                                             Text("Personal Documents")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))

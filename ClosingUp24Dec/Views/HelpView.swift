@@ -30,7 +30,7 @@ struct HelpView: View {
                                         .overlay(HStack {
                                             Image(systemName: "square")
                                                 .foregroundColor(.black)
-                                            Text("Notice of Vesting")
+                                            Text("Button 1")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
                                                 .foregroundColor(.black)
                                                 .navigationBarTitle("")
@@ -46,7 +46,7 @@ struct HelpView: View {
                                         .overlay(HStack {
                                             Image(systemName: "square")
                                                 .foregroundColor(.black)
-                                            Text("Real Estate Documents")
+                                            Text("Button 2")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
                                                 .foregroundColor(.black)
                                                 .navigationBarTitle("")
@@ -64,7 +64,7 @@ struct HelpView: View {
                                             Image(systemName: "checkmark.square")
                                                 .foregroundColor(.black)
                                             
-                                            Text("Mortgage Documents")
+                                            Text("Button 3")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
                                                 .foregroundColor(.black)
                                                 .navigationBarTitle("")

@@ -184,8 +184,12 @@ struct RealEstateOne: View {
                 
                 
             }
+            
+          
+            
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        
     }
         
 }
