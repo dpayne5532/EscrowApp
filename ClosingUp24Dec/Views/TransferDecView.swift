@@ -8,7 +8,30 @@
 import SwiftUI
 
 struct TransferDecView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
+        
+        
+        ZStack {
+            Color("rahRed")
+                .ignoresSafeArea()
+            
+            VStack {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Text("TRANSFER DEC HERE EVENTUALLY!")
+                        .foregroundColor(.black)
+                        .font(Font.custom("PaytoneOne-Regular", size: 40))
+                    
+                }
+            }
+            .navigationBarTitle("")
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
+            
+        }
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }

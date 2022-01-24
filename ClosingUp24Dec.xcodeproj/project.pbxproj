@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3627D0B32795E70500F067FC /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3627D0B22795E70500F067FC /* video.mp4 */; };
+		3627D0B52795EA1E00F067FC /* videorah.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3627D0B42795EA1E00F067FC /* videorah.mp4 */; };
 		364BC2EA277690E900AE7478 /* RealEstateOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364BC2E9277690E900AE7478 /* RealEstateOne.swift */; };
 		364BC30E2776CAE400AE7478 /* LoanDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364BC30D2776CAE400AE7478 /* LoanDocs.swift */; };
 		36587E50277FE79600ED0B9C /* VestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36587E4F277FE79600ED0B9C /* VestingView.swift */; };
@@ -20,6 +22,10 @@
 		36CF8A9D277689EF007E68A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CF8A9C277689EF007E68A3 /* AppDelegate.swift */; };
 		36CF8A9F27768A13007E68A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CF8A9E27768A13007E68A3 /* SceneDelegate.swift */; };
 		36CF8AA127768A61007E68A3 /* UIPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CF8AA027768A61007E68A3 /* UIPlayerView.swift */; };
+		36E10F3A279BBD0800F32709 /* pdfStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E10F39279BBD0800F32709 /* pdfStuff.swift */; };
+		36E10F3C279BBD7800F32709 /* appguide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 36E10F3B279BBD7800F32709 /* appguide.pdf */; };
+		36E10F3E279BC1D100F32709 /* form.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 36E10F3D279BC1D100F32709 /* form.pdf */; };
+		36E10F40279BC35E00F32709 /* reDocs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 36E10F3F279BC35E00F32709 /* reDocs.pdf */; };
 		36EAA9692776DF1700AC97B2 /* PaytoneOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36EAA9682776DF1700AC97B2 /* PaytoneOne-Regular.ttf */; };
 		36EAA96C2776F0E900AC97B2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36EAA96B2776F0E900AC97B2 /* Launch Screen.storyboard */; };
 		36EAA96E2777A4FE00AC97B2 /* PersonalDocuments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAA96D2777A4FE00AC97B2 /* PersonalDocuments.swift */; };
@@ -27,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3627D0B22795E70500F067FC /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		3627D0B42795EA1E00F067FC /* videorah.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videorah.mp4; sourceTree = "<group>"; };
 		364BC2E9277690E900AE7478 /* RealEstateOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateOne.swift; sourceTree = "<group>"; };
 		364BC30D2776CAE400AE7478 /* LoanDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDocs.swift; sourceTree = "<group>"; };
 		36587E4F277FE79600ED0B9C /* VestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VestingView.swift; sourceTree = "<group>"; };
@@ -41,6 +49,10 @@
 		36CF8A9C277689EF007E68A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36CF8A9E27768A13007E68A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		36CF8AA027768A61007E68A3 /* UIPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPlayerView.swift; sourceTree = "<group>"; };
+		36E10F39279BBD0800F32709 /* pdfStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pdfStuff.swift; sourceTree = "<group>"; };
+		36E10F3B279BBD7800F32709 /* appguide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = appguide.pdf; sourceTree = "<group>"; };
+		36E10F3D279BC1D100F32709 /* form.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = form.pdf; sourceTree = "<group>"; };
+		36E10F3F279BC35E00F32709 /* reDocs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = reDocs.pdf; sourceTree = "<group>"; };
 		36EAA9682776DF1700AC97B2 /* PaytoneOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PaytoneOne-Regular.ttf"; sourceTree = "<group>"; };
 		36EAA96A2776DF2C00AC97B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		36EAA96B2776F0E900AC97B2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -78,6 +90,8 @@
 		36CF8A8D2776896A007E68A3 /* ClosingUp24Dec */ = {
 			isa = PBXGroup;
 			children = (
+				3627D0B42795EA1E00F067FC /* videorah.mp4 */,
+				3627D0B22795E70500F067FC /* video.mp4 */,
 				36EAA96A2776DF2C00AC97B2 /* Info.plist */,
 				36EAA9672776DF0700AC97B2 /* fonts */,
 				36CF8AA227768F3D007E68A3 /* Views */,
@@ -103,6 +117,9 @@
 		36CF8AA227768F3D007E68A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				36E10F3F279BC35E00F32709 /* reDocs.pdf */,
+				36E10F3D279BC1D100F32709 /* form.pdf */,
+				36E10F3B279BBD7800F32709 /* appguide.pdf */,
 				36CF8A902776896A007E68A3 /* ContentView.swift */,
 				36EAA96D2777A4FE00AC97B2 /* PersonalDocuments.swift */,
 				364BC2E9277690E900AE7478 /* RealEstateOne.swift */,
@@ -112,6 +129,7 @@
 				36587E51277FE7BD00ED0B9C /* TransferDecView.swift */,
 				36587E53277FE80B00ED0B9C /* ClosingInstructionsView.swift */,
 				36587E55277FE83100ED0B9C /* AffidavitView.swift */,
+				36E10F39279BBD0800F32709 /* pdfStuff.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,9 +200,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E10F40279BC35E00F32709 /* reDocs.pdf in Resources */,
 				36EAA9692776DF1700AC97B2 /* PaytoneOne-Regular.ttf in Resources */,
+				3627D0B32795E70500F067FC /* video.mp4 in Resources */,
 				36CF8A962776896C007E68A3 /* Preview Assets.xcassets in Resources */,
+				3627D0B52795EA1E00F067FC /* videorah.mp4 in Resources */,
+				36E10F3E279BC1D100F32709 /* form.pdf in Resources */,
 				36EAA96C2776F0E900AC97B2 /* Launch Screen.storyboard in Resources */,
+				36E10F3C279BBD7800F32709 /* appguide.pdf in Resources */,
 				36CF8A932776896C007E68A3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +226,7 @@
 				36587E54277FE80B00ED0B9C /* ClosingInstructionsView.swift in Sources */,
 				36CF8A912776896A007E68A3 /* ContentView.swift in Sources */,
 				36CF8A8F2776896A007E68A3 /* ClosingUp24DecApp.swift in Sources */,
+				36E10F3A279BBD0800F32709 /* pdfStuff.swift in Sources */,
 				36EAA9702777BD6000AC97B2 /* HelpView.swift in Sources */,
 				36CF8AA127768A61007E68A3 /* UIPlayerView.swift in Sources */,
 				364BC2EA277690E900AE7478 /* RealEstateOne.swift in Sources */,

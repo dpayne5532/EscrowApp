@@ -8,16 +8,18 @@
 import SwiftUI
 
 
-var buyOne = "Buyer 1"
-var buyOneDone = false
-var buyTwo = "Buyer 2"
-var buyTwoDone = false
+
 
 
 struct PersonalDocuments: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    let steve = ContentView()
+    var buyOne = "Buyer 1"
+    var buyOneDone = false
+    var buyTwo = "Buyer 2"
+    var buyTwoDone = false
+   
+    @StateObject var steve = doneButtons()
     
     var body: some View {
         ZStack {
@@ -26,10 +28,10 @@ struct PersonalDocuments: View {
                 .ignoresSafeArea()
             
             VStack {
-                
+              
                 
                 HStack {
-                    Button {steve.isDone = true}
+                    Button {steve.isDone1 = true}
                 label: {
                     RoundedRectangle(cornerRadius: 25)
                         .fill(Color("rahRed"))

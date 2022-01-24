@@ -158,6 +158,8 @@ struct RealEstateOne: View {
                                 
                                     .opacity(0.8)
                             }
+                            
+                            
                             Spacer()
                             
                             VStack {
@@ -189,7 +191,9 @@ struct RealEstateOne: View {
             
         }
         .navigationViewStyle(StackNavigationViewStyle())
-        
+        .foregroundColor(.black)
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
         
 }

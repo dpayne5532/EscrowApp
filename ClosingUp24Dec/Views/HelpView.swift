@@ -85,26 +85,7 @@ struct HelpView: View {
                             }
                             Spacer()
                             
-                            VStack {
-                                Spacer()
-                                Spacer()
-                                NavigationLink(destination: HelpView()) {
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .fill(Color("rahRed"))
-                                        .padding(.all)
-                                        .frame(width: 130, height: 80)
-                                        .shadow(color: .black, radius: 10, x: 3, y: 3   )
-                                        .overlay(HStack {
-                                            Image(systemName: "questionmark.circle.fill")
-                                                .foregroundColor(.black)
-                                            Text("Help")
-                                                .font(Font.custom("PaytoneOne-Regular", size: 16))
-                                                .foregroundColor(.black)
-                                                .navigationBarTitle("")
-                                                .navigationBarHidden(true)
-                                        })
-                                }
-                            }
+
                         }
                 
                 
@@ -115,31 +96,7 @@ struct HelpView: View {
         
 }
         
-//        ZStack {
-//            Color("rahRed")
-//                .ignoresSafeArea()
-//
-//            VStack {
-//
-//
-//
-//
-//                Button(action: {
-//                    self.presentationMode.wrappedValue.dismiss()
-//                }) {
-//                    Text("This will be the help menu")
-//                        .foregroundColor(.black)
-//                        .font(Font.custom("PaytoneOne-Regular", size: 40))
-//
-//                }
-//            }
-//            .navigationBarTitle("")
-//            .navigationBarBackButtonHidden(true)
-//            .navigationBarHidden(true)
-//
-//        }
-//    }
-//}
+
 
 struct HelpView_Previews: PreviewProvider {
     static var previews: some View {

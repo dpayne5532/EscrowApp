@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct AffidavitView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        
+        ZStack {
+            Color("rahRed")
+                .ignoresSafeArea()
+            
+            VStack {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Text("BUYER INDEMNITY HERE EVENTUALLY!")
+                        .foregroundColor(.black)
+                        .font(Font.custom("PaytoneOne-Regular", size: 40))
+                    
+                }
+            }
+            .navigationBarTitle("")
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
+            
+        }
     }
 }
 

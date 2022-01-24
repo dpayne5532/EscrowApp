@@ -25,13 +25,25 @@ class UIVideoPlayer: UIView {
         super.init(frame: frame)
         
         
-         // guard let url = URL(string: "https://github.com/dpayne5532/BP/blob/main/video4.mp4?raw=true") else { return }
-        guard let url = URL(string: "https://github.com/dpayne5532/BP/blob/main/videorah.mp4?raw=true") else { return }
+      
         
+        
+        
+        
+        
+        
+        
+        
+         // First video guard let url = URL(string: "https://github.com/dpayne5532/BP/blob/main/video4.mp4?raw=true") else { return }
+      
+        
+        guard let url = Bundle.main.url(forResource: "videorah", withExtension: "mp4") else { return }
+        
+    
         let player = AVPlayer(url: url)
         
         
-        player.isMuted = true
+        player.isMuted = false
         player.play()
         playerLayer.player = player
         playerLayer.videoGravity = AVLayerVideoGravity(rawValue: AVLayerVideoGravity.resizeAspectFill.rawValue)

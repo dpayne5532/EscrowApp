@@ -1,10 +1,34 @@
+
+
+
+
+
+
 import SwiftUI
 import AVFoundation
 
 
+
+
+class doneButtons: ObservableObject {
+    @Published var isDone1 = false
+    
+    
+    func flip() {
+        isDone1.toggle()
+    }
+    
+    
+    
+}
+
+
+
 struct ContentView: View {
     
-    @State var isDone = true
+  
+    
+   @StateObject var steve = doneButtons()
     
     var body: some View {
         NavigationView {
@@ -17,7 +41,7 @@ struct ContentView: View {
                             
                             
                             
-                            
+                      
                             
                             
                             
@@ -30,16 +54,19 @@ struct ContentView: View {
                                         .frame(width: 280, height: 70)
                                         .shadow(color: .black, radius: 10, x: 3, y: 3   )
                                         .overlay(HStack {
-                                            Image(systemName: self.isDone ? "checkmark.square" : "square")
+                                            Image(systemName: Bool(steve.isDone1) ? "checkmark.square" : "square")
                                                 .foregroundColor(.black)
                                             Text("Personal Documents")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
                                                 .foregroundColor(.black)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
-                                        })
+                                        }
+                                                 
+                                        )
+                                    
                                 }
-                                NavigationLink(destination: RealEstateOne()) {
+                                NavigationLink(destination: VestingView()) {
                                     RoundedRectangle(cornerRadius: 25)
                                         .fill(Color("rahRed"))
                                         .padding(.horizontal)
@@ -110,6 +137,9 @@ struct ContentView: View {
                         })
                 
                 
+            }
+            .onAppear {
+                print("HEYOOOOOO")
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
