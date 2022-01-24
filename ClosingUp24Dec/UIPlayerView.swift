@@ -43,7 +43,7 @@ class UIVideoPlayer: UIView {
         let player = AVPlayer(url: url)
         
         
-        player.isMuted = false
+        player.isMuted = true
         player.play()
         playerLayer.player = player
         playerLayer.videoGravity = AVLayerVideoGravity(rawValue: AVLayerVideoGravity.resizeAspectFill.rawValue)

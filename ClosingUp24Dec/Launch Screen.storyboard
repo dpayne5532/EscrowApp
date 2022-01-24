@@ -47,7 +47,7 @@
     <resources>
         <image name="logobozo" width="2335" height="517"/>
         <namedColor name="rahRed">
-            <color red="0.5607891679" green="0.19998693470000001" blue="0.27059084179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.56099998950958252" green="0.20000000298023224" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

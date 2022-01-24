@@ -14,7 +14,7 @@ struct TransferDecView: View {
         
         
         ZStack {
-            Color("rahRed")
+            LinearGradient(gradient: Gradient(colors: [Color("rahRed"), Color("rahDarkRed")]), startPoint: .leading, endPoint: .bottom)
                 .ignoresSafeArea()
             
             VStack {
@@ -22,7 +22,7 @@ struct TransferDecView: View {
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("TRANSFER DEC HERE EVENTUALLY!")
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                         .font(Font.custom("PaytoneOne-Regular", size: 40))
                     
                 }

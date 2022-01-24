@@ -15,7 +15,7 @@ struct ClosingInstructionsView: View {
         
         
         ZStack {
-            Color("rahRed")
+            LinearGradient(gradient: Gradient(colors: [Color("rahRed"), Color("rahDarkRed")]), startPoint: .leading, endPoint: .bottom)
                 .ignoresSafeArea()
             
             VStack {
@@ -23,7 +23,7 @@ struct ClosingInstructionsView: View {
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("CLOSING INSTRUCTIONS HERE EVENTUALLY!")
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                         .font(Font.custom("PaytoneOne-Regular", size: 40))
                     
                 }

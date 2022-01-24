@@ -22,7 +22,7 @@ struct LoanDocs: View {
         
         
         ZStack {
-            Color("rahRed")
+            LinearGradient(gradient: Gradient(colors: [Color("rahRed"), Color("rahDarkRed")]), startPoint: .leading, endPoint: .bottom)
                 .ignoresSafeArea()
             
             VStack {
@@ -30,7 +30,7 @@ struct LoanDocs: View {
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("LOAN DOCS HERE EVENTUALLY!")
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                         .font(Font.custom("PaytoneOne-Regular", size: 40))
                     
                 }

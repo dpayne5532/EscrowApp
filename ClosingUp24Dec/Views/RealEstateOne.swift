@@ -13,29 +13,31 @@ struct RealEstateOne: View {
   
    
     
-    
+    let videoUrl = URL(fileURLWithPath: Bundle.main.path(forResource: "Pexels Sea", ofType: "mp4")!)
     
     var body: some View {
         
         NavigationView {
             ZStack {
-                Color("rahDarkRed")
+           
+                LinearGradient(gradient: Gradient(colors: [Color("rahRed"), Color("rahDarkRed")]), startPoint: .leading, endPoint: .bottom)
                 .ignoresSafeArea()
-                        HStack {
+                 
+                HStack {
                             VStack {
                                 Spacer()
-                                NavigationLink(destination: VestingView()) {
+                                NavigationLink(destination: VideoPlayerView(url: videoUrl)) {
                                     RoundedRectangle(cornerRadius: 25)
-                                        .fill(Color("rahRed"))
+                                        .fill(RadialGradient(gradient: Gradient(colors: [Color("guardianBlue"), .black]), center: .center, startRadius: 70, endRadius: 200))
                                         .padding(.horizontal)
                                         .frame(width: 280, height: 70)
                                         .shadow(color: .black, radius: 10, x: 3, y: 3   )
                                         .overlay(HStack {
                                             Image(systemName: "square")
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                             Text("Notice of Vesting")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
                                         })
@@ -44,110 +46,57 @@ struct RealEstateOne: View {
                                 
                                 NavigationLink(destination: TransferDecView()) {
                                     RoundedRectangle(cornerRadius: 25)
-                                        .fill(Color("rahRed"))
+                                        .fill(RadialGradient(gradient: Gradient(colors: [Color("guardianBlue"), .black]), center: .center, startRadius: 70, endRadius: 200))
                                         .padding(.horizontal)
                                         .frame(width: 280, height: 70)
                                         .shadow(color: .black, radius: 10, x: 3, y: 3   )
                                         .overlay(HStack {
                                             Image(systemName: "square")
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                             
                                             Text("Transfer Declaration")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
                                         })
                                 }
                                 NavigationLink(destination: ClosingInstructionsView()) {
                                     RoundedRectangle(cornerRadius: 25)
-                                        .fill(Color("rahRed"))
+                                        .fill(RadialGradient(gradient: Gradient(colors: [Color("guardianBlue"), .black]), center: .center, startRadius: 70, endRadius: 200))
                                         .padding(.horizontal)
                                         .frame(width: 280, height: 70)
                                         .shadow(color: .black, radius: 10, x: 3, y: 3   )
                                         .overlay(HStack {
                                             Image(systemName: "square")
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                             
                                             Text("Closing Instructions")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
                                         })
                                 }
-                                NavigationLink(destination: AffidavitView()) {
+                                NavigationLink(destination: VideoPlayerView(url: videoUrl)) {
                                     RoundedRectangle(cornerRadius: 25)
-                                        .fill(Color("rahRed"))
+                                        .fill(RadialGradient(gradient: Gradient(colors: [Color("guardianBlue"), .black]), center: .center, startRadius: 70, endRadius: 200))
                                         .padding(.horizontal)
                                         .frame(width: 280, height: 70)
                                         .shadow(color: .black, radius: 10, x: 3, y: 3   )
                                         .overlay(HStack {
                                             Image(systemName: "square")
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                             
                                             Text("Affidavit/Indemnity")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
                                         })
                                 }
                                 
-                                NavigationLink(destination: AffidavitView()) {
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .fill(Color("rahRed"))
-                                        .padding(.horizontal)
-                                        .frame(width: 280, height: 70)
-                                        .shadow(color: .black, radius: 10, x: 3, y: 3   )
-                                        .overlay(HStack {
-                                            Image(systemName: "square")
-                                                .foregroundColor(.black)
-                                            
-                                            Text("Affidavit/Indemnity")
-                                                .font(Font.custom("PaytoneOne-Regular", size: 16))
-                                                .foregroundColor(.black)
-                                                .navigationBarTitle("")
-                                                .navigationBarHidden(true)
-                                        })
-                                }
-                                NavigationLink(destination: AffidavitView()) {
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .fill(Color("rahRed"))
-                                        .padding(.horizontal)
-                                        .frame(width: 280, height: 70)
-                                        .shadow(color: .black, radius: 10, x: 3, y: 3   )
-                                        .overlay(HStack {
-                                            Image(systemName: "square")
-                                                .foregroundColor(.black)
-                                            
-                                            Text("Affidavit/Indemnity")
-                                                .font(Font.custom("PaytoneOne-Regular", size: 16))
-                                                .foregroundColor(.black)
-                                                .navigationBarTitle("")
-                                                .navigationBarHidden(true)
-                                        })
-                                }
-                                
-                                NavigationLink(destination: AffidavitView()) {
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .fill(Color("rahRed"))
-                                        .padding(.horizontal)
-                                        .frame(width: 280, height: 70)
-                                        .shadow(color: .black, radius: 10, x: 3, y: 3   )
-                                        .overlay(HStack {
-                                            Image(systemName: "square")
-                                                .foregroundColor(.black)
-                                            
-                                            Text("Affidavit/Indemnity")
-                                                .font(Font.custom("PaytoneOne-Regular", size: 16))
-                                                .foregroundColor(.black)
-                                                .navigationBarTitle("")
-                                                .navigationBarHidden(true)
-                                        })
-                                }
-                                
-                             
+  
                                 
                                 Spacer()
                                 Image("logobozo")
@@ -163,20 +112,37 @@ struct RealEstateOne: View {
                             Spacer()
                             
                             VStack {
+                                Button {
+                                    self.presentationMode.wrappedValue.dismiss()
+                                }
+                            label: {
+                                
+                                HStack {
+                                
+                                    Spacer()
+                                Image(systemName: "xmark")
+                                        .foregroundColor(.black)
+                                    .imageScale(.large)
+                                    .frame(width: 44, height: 44)
+                                    
+                               
+                                
+                            }
+                            }
                                 Spacer()
                                 Spacer()
                                 NavigationLink(destination: HelpView()) {
                                     RoundedRectangle(cornerRadius: 25)
-                                        .fill(Color("rahRed"))
+                                        .fill(RadialGradient(gradient: Gradient(colors: [Color("guardianBlue"), .black]), center: .center, startRadius: 20, endRadius: 200))
                                         .padding(.all)
                                         .frame(width: 130, height: 80)
                                         .shadow(color: .black, radius: 10, x: 3, y: 3   )
                                         .overlay(HStack {
                                             Image(systemName: "questionmark.circle.fill")
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                             Text("Help")
                                                 .font(Font.custom("PaytoneOne-Regular", size: 16))
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
                                         })
