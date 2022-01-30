@@ -15,6 +15,13 @@
 		36587E52277FE7BD00ED0B9C /* TransferDecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36587E51277FE7BD00ED0B9C /* TransferDecView.swift */; };
 		36587E54277FE80B00ED0B9C /* ClosingInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36587E53277FE80B00ED0B9C /* ClosingInstructionsView.swift */; };
 		36587E56277FE83100ED0B9C /* AffidavitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36587E55277FE83100ED0B9C /* AffidavitView.swift */; };
+		369F57CE279F7F6C002A1226 /* hartIntro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 369F57CD279F7F6C002A1226 /* hartIntro.mp4 */; };
+		369F57D0279F842B002A1226 /* hartIntro2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 369F57CF279F842B002A1226 /* hartIntro2.mp4 */; };
+		36B25C0027A66AE300807DFD /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 36B25BFF27A66AE300807DFD /* CodeScanner */; };
+		36BC54CB27A37434003422DF /* RE04.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 36BC54CA27A37434003422DF /* RE04.pdf */; };
+		36BC54CD27A37643003422DF /* RE01.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 36BC54CC27A37643003422DF /* RE01.pdf */; };
+		36BC54CF27A381F4003422DF /* RE04.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 36BC54CE27A381F4003422DF /* RE04.mp4 */; };
+		36BC54D127A389D3003422DF /* RE03.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 36BC54D027A389D3003422DF /* RE03.pdf */; };
 		36CC8354279E39EC0096261E /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CC8353279E39EC0096261E /* VideoPlayerView.swift */; };
 		36CC8356279E3A780096261E /* Pexels Sea.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 36CC8355279E3A780096261E /* Pexels Sea.mp4 */; };
 		36CF8A8F2776896A007E68A3 /* ClosingUp24DecApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CF8A8E2776896A007E68A3 /* ClosingUp24DecApp.swift */; };
@@ -43,6 +50,12 @@
 		36587E51277FE7BD00ED0B9C /* TransferDecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDecView.swift; sourceTree = "<group>"; };
 		36587E53277FE80B00ED0B9C /* ClosingInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosingInstructionsView.swift; sourceTree = "<group>"; };
 		36587E55277FE83100ED0B9C /* AffidavitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffidavitView.swift; sourceTree = "<group>"; };
+		369F57CD279F7F6C002A1226 /* hartIntro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hartIntro.mp4; sourceTree = "<group>"; };
+		369F57CF279F842B002A1226 /* hartIntro2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hartIntro2.mp4; sourceTree = "<group>"; };
+		36BC54CA27A37434003422DF /* RE04.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = RE04.pdf; sourceTree = "<group>"; };
+		36BC54CC27A37643003422DF /* RE01.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = RE01.pdf; sourceTree = "<group>"; };
+		36BC54CE27A381F4003422DF /* RE04.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RE04.mp4; sourceTree = "<group>"; };
+		36BC54D027A389D3003422DF /* RE03.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = RE03.pdf; sourceTree = "<group>"; };
 		36CC8353279E39EC0096261E /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		36CC8355279E3A780096261E /* Pexels Sea.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pexels Sea.mp4"; sourceTree = "<group>"; };
 		36CF8A8B2776896A007E68A3 /* ClosingUp24Dec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClosingUp24Dec.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36B25C0027A66AE300807DFD /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +136,13 @@
 			isa = PBXGroup;
 			children = (
 				36CC8355279E3A780096261E /* Pexels Sea.mp4 */,
+				36BC54CE27A381F4003422DF /* RE04.mp4 */,
+				369F57CD279F7F6C002A1226 /* hartIntro.mp4 */,
+				369F57CF279F842B002A1226 /* hartIntro2.mp4 */,
 				36E10F3F279BC35E00F32709 /* reDocs.pdf */,
+				36BC54CC27A37643003422DF /* RE01.pdf */,
+				36BC54D027A389D3003422DF /* RE03.pdf */,
+				36BC54CA27A37434003422DF /* RE04.pdf */,
 				36E10F3D279BC1D100F32709 /* form.pdf */,
 				36E10F3B279BBD7800F32709 /* appguide.pdf */,
 				36CF8A902776896A007E68A3 /* ContentView.swift */,
@@ -164,6 +184,9 @@
 			dependencies = (
 			);
 			name = ClosingUp24Dec;
+			packageProductDependencies = (
+				36B25BFF27A66AE300807DFD /* CodeScanner */,
+			);
 			productName = ClosingUp24Dec;
 			productReference = 36CF8A8B2776896A007E68A3 /* ClosingUp24Dec.app */;
 			productType = "com.apple.product-type.application";
@@ -192,6 +215,9 @@
 				Base,
 			);
 			mainGroup = 36CF8A822776896A007E68A3;
+			packageReferences = (
+				36B25BFE27A66AE300807DFD /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 36CF8A8C2776896A007E68A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,13 +235,19 @@
 				36E10F40279BC35E00F32709 /* reDocs.pdf in Resources */,
 				36EAA9692776DF1700AC97B2 /* PaytoneOne-Regular.ttf in Resources */,
 				3627D0B32795E70500F067FC /* video.mp4 in Resources */,
+				369F57CE279F7F6C002A1226 /* hartIntro.mp4 in Resources */,
 				36CC8356279E3A780096261E /* Pexels Sea.mp4 in Resources */,
 				36CF8A962776896C007E68A3 /* Preview Assets.xcassets in Resources */,
+				369F57D0279F842B002A1226 /* hartIntro2.mp4 in Resources */,
 				3627D0B52795EA1E00F067FC /* videorah.mp4 in Resources */,
 				36E10F3E279BC1D100F32709 /* form.pdf in Resources */,
 				36EAA96C2776F0E900AC97B2 /* Launch Screen.storyboard in Resources */,
+				36BC54D127A389D3003422DF /* RE03.pdf in Resources */,
 				36E10F3C279BBD7800F32709 /* appguide.pdf in Resources */,
 				36CF8A932776896C007E68A3 /* Assets.xcassets in Resources */,
+				36BC54CD27A37643003422DF /* RE01.pdf in Resources */,
+				36BC54CB27A37434003422DF /* RE04.pdf in Resources */,
+				36BC54CF27A381F4003422DF /* RE04.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +408,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClosingUp24Dec/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to scan your documents.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
@@ -407,6 +440,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClosingUp24Dec/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to scan your documents.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
@@ -447,6 +481,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36B25BFE27A66AE300807DFD /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36B25BFF27A66AE300807DFD /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36B25BFE27A66AE300807DFD /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 36CF8A832776896A007E68A3 /* Project object */;
 }

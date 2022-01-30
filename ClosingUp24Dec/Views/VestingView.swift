@@ -6,13 +6,24 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct VestingView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    let documentURL = Bundle.main.url(forResource: "reDocs", withExtension: "pdf")!
+    let documentURL = Bundle.main.url(forResource: "RE01", withExtension: "pdf")!
+    let url: URL
+    
     var body: some View {
+        
+        ZStack {
+            
+            LinearGradient(gradient: Gradient(colors: [Color("rahRed"), Color("rahDarkRed")]), startPoint: .leading, endPoint: .bottom)
+            .ignoresSafeArea()
+            
+        
+        
         VStack(alignment: .center) {
             
        
@@ -37,19 +48,23 @@ struct VestingView: View {
             
             Text("Notice of Vesting")
                 .font(.largeTitle)
-            
+                .foregroundColor(.white)
+                .bold()
             
      
             
+            VideoPlayer(player: AVPlayer(url: url))
+
+                    .frame(width: 575, height: 275)
+                    .cornerRadius(20)
+                    .shadow(color: .black, radius: 20)
+                    .padding()
+            Spacer()
             
             
             
-            
-            
-//            HStack(alignment: .top) {
-//                Text("Made with ❤ at WWDC19")
-//                    .font(.title)
-//            }
+
+
             PDFKitView(url: documentURL)
         }
         
@@ -59,10 +74,6 @@ struct VestingView: View {
     }
 }
         
-      
-
-struct VestingView_Previews: PreviewProvider {
-    static var previews: some View {
-        VestingView()
-    }
 }
+
+

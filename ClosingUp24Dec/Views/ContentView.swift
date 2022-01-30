@@ -21,7 +21,7 @@ class doneButtons: ObservableObject {
 struct ContentView: View {
     
   
-    let videoUrl = URL(fileURLWithPath: Bundle.main.path(forResource: "Pexels Sea", ofType: "mp4")!)
+    let videoUrl = URL(fileURLWithPath: Bundle.main.path(forResource: "RE04", ofType: "mp4")!)
    @StateObject var steve = doneButtons()
     
     var body: some View {
@@ -41,7 +41,7 @@ struct ContentView: View {
                                         .fill(RadialGradient(gradient: Gradient(colors: [Color("rahRed"), .black]), center: .center, startRadius: 40, endRadius: 200))
                                         .padding(.horizontal)
                                         .frame(width: 280, height: 70)
-                                        .shadow(color: .black, radius: 10, x: 3, y: 3   )
+                                        .shadow(color: .black, radius: 10, x: 3, y: 3)
                                         .overlay(HStack {
                                             Image(systemName: Bool(steve.isDone1) ? "square" : "checkmark.square")
                                                 .foregroundColor(.white)
@@ -60,7 +60,7 @@ struct ContentView: View {
                                         .fill(RadialGradient(gradient: Gradient(colors: [Color("rahRed"), .black]), center: .center, startRadius: 40, endRadius: 200))
                                         .padding(.horizontal)
                                         .frame(width: 280, height: 70)
-                                        .shadow(color: .black, radius: 10, x: 3, y: 3   )
+                                        .shadow(color: .black, radius: 10, x: 3, y: 3)
                                         .overlay(HStack {
                                             Image(systemName: "square")
                                                 .foregroundColor(.white)
@@ -77,7 +77,7 @@ struct ContentView: View {
                                         .fill(RadialGradient(gradient: Gradient(colors: [Color("rahRed"), .black]), center: .center, startRadius: 40, endRadius: 200))
                                         .padding(.horizontal)
                                         .frame(width: 280, height: 70)
-                                        .shadow(color: .black, radius: 10, x: 3, y: 3   )
+                                        .shadow(color: .black, radius: 10, x: 3, y: 3)
                                         .overlay(HStack {
                                             Image(systemName: "square")
                                                 .foregroundColor(.white)
@@ -118,7 +118,7 @@ struct ContentView: View {
                                         .fill(Color("rahRed"))
                                         .padding(.all)
                                         .frame(width: 130, height: 80)
-                                        .shadow(color: .black, radius: 10, x: 3, y: 3   )
+                                        .shadow(color: .black, radius: 10, x: 3, y: 3)
                                         .overlay(HStack {
                                             Image(systemName: "questionmark.circle.fill")
                                                 .foregroundColor(.white)

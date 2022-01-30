@@ -11,13 +11,13 @@ import SwiftUI
 struct VideoPlayerView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    let documentURL = Bundle.main.url(forResource: "reDocs", withExtension: "pdf")!
+    let documentURL = Bundle.main.url(forResource: "RE04", withExtension: "pdf")!
     let url: URL
 
     var body: some View {
         
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color("rahRed"), Color("rahDarkRed")]), startPoint: .leading, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [Color("rahRed"), Color("rahDarkRed")]), startPoint: .leading, endPoint: .trailing)
             .ignoresSafeArea()
             
         
@@ -40,17 +40,26 @@ struct VideoPlayerView: View {
                 
             }
             }
-                 
+                Text("Affidavit & Indemnity")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .bold()
             
             VideoPlayer(player: AVPlayer(url: url))
-            .frame(height: 275)
-        
+                    .frame(width: 575, height: 275)
+                    .cornerRadius(20)
+                    .shadow(color: .black, radius: 20)
+                    .padding()
+            Spacer()
+                
+                
                 PDFKitView(url: documentURL)
                     
         
             }
             .navigationBarBackButtonHidden(true)
-        
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
         
         
