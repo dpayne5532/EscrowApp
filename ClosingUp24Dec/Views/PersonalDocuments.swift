@@ -17,10 +17,23 @@ struct PersonalDocuments: View {
     @State private var firstBuyerName = "Buyer One"
     @State private var secondBuyerName = "Buyer Two"
     @State private var buyerFirstName = ""
+    @State private var buyerMiddleName = ""
     @State private var buyerLastName = ""
     @State private var buyerFirstNameTwo = ""
+    @State private var buyerMiddleNameTwo = ""
     @State private var buyerLastNameTwo = ""
+    @State private var B1DOB = "01/01/1971"
+    @State private var B2DOB = "00/00/0000"
     
+    
+    @State private var buyerAddress = ""
+    @State private var buyerCity = ""
+    @State private var buyerState = ""
+    @State private var buyerDLID = ""
+    @State private var buyerAddressTwo = ""
+    @State private var buyerCityTwo = ""
+    @State private var buyerStateTwo = ""
+    @State private var buyerDLIDTwo = ""
     
     private let pdf417Map: [String: String] = [
         "DAA":"Full Name",
@@ -115,8 +128,8 @@ struct PersonalDocuments: View {
     var buyOneDone = false
     var buyTwo = "Buyer 2"
     var buyTwoDone = false
-   
-       
+    
+    
     var body: some View {
         ZStack {
             Color("rahDarkRed")
@@ -162,6 +175,64 @@ struct PersonalDocuments: View {
                 }
                     
                 }
+                
+                
+                HStack {
+                
+                    VStack {
+                    
+                    Text("\(buyerFirstName) \(buyerMiddleName) \(buyerLastName)")
+                        .font(Font.custom("PaytoneOne-Regular", size: 20))
+                        .bold()
+                        .padding(.leading, 50)
+                    
+                    Text(buyerAddress)
+                            .font(Font.custom("PaytoneOne-Regular", size: 20))
+                            .bold()
+                            .padding(.leading, 50)
+                        
+                        
+                        Text("\(buyerCity) \(buyerState)")
+                            .font(Font.custom("PaytoneOne-Regular", size: 20))
+                            .bold()
+                            .padding(.leading, 50)
+                        
+                        Text(buyerDLID)
+                            .font(Font.custom("PaytoneOne-Regular", size: 20))
+                            .bold()
+                            .padding(.leading, 50)
+
+                        
+                        
+                        
+                    }
+                    
+                    Spacer()
+                    
+                    VStack {
+                    Text("\(buyerFirstNameTwo) \(buyerMiddleNameTwo) \(buyerLastNameTwo)")
+                     
+                        .font(Font.custom("PaytoneOne-Regular", size: 20))
+                        .bold()
+                        .padding(.trailing, 50)
+                    Text(buyerAddressTwo)
+                            .font(Font.custom("PaytoneOne-Regular", size: 20))
+                            .bold()
+                            .padding(.trailing, 50)
+                        
+                        
+                        Text("\(buyerCityTwo) \(buyerStateTwo)")
+                            .font(Font.custom("PaytoneOne-Regular", size: 20))
+                            .bold()
+                            .padding(.trailing, 50)
+                        
+                        Text(buyerDLIDTwo)
+                            .font(Font.custom("PaytoneOne-Regular", size: 20))
+                            .bold()
+                            .padding(.trailing, 50)
+                    }
+                }
+           
                 
                 Spacer()
                 
@@ -221,11 +292,36 @@ struct PersonalDocuments: View {
                         print("Extracted Data: \(extractedData)")
                         
                         if pdf417Code == "DAC" {
-                   //         print(extractedData)
-                            buyerFirstName += extractedData
+                            
+                            buyerFirstName = String(extractedData)
+                        
                         } else if pdf417Code == "DCS" {
-                //            print(extractedData)
-                            buyerLastName += extractedData
+                            
+                            buyerLastName = String(extractedData)
+                        
+                        } else if pdf417Code == "DAD" {
+                            
+                            buyerMiddleName = String(extractedData)
+                        } else if pdf417Code == "DAG" {
+                            
+                            buyerAddress = String(extractedData)
+                        } else if pdf417Code == "DAI" {
+                            
+                            buyerCity = String(extractedData)
+                        } else if pdf417Code == "DAJ" {
+                            
+                            buyerState = String(extractedData)
+                        } else if pdf417Code == "DAQ" {
+                            
+                            buyerDLID = String(extractedData)
+                        }
+                        
+                        
+                        
+                        
+                        else if pdf417Code == "DBB" {
+                        
+                            B1DOB = String(extractedData)
                         }
                     }
                 }
@@ -267,16 +363,41 @@ struct PersonalDocuments: View {
                         print("Extracted Data: \(extractedData)")
                         
                         if pdf417Code == "DAC" {
-                   //         print(extractedData)
-                            buyerFirstNameTwo += extractedData
+                           
+                            buyerFirstNameTwo = String(extractedData)
                         } else if pdf417Code == "DCS" {
-                //            print(extractedData)
-                            buyerLastNameTwo += extractedData
+                            
+                            buyerLastNameTwo = String(extractedData)
+                        } else if pdf417Code == "DAD" {
+                            
+                            buyerMiddleNameTwo = String(extractedData)
+                        } else if pdf417Code == "DAG" {
+                            
+                            buyerAddressTwo = String(extractedData)
+                        } else if pdf417Code == "DAI" {
+                            
+                            buyerCityTwo = String(extractedData)
+                        } else if pdf417Code == "DAJ" {
+                            
+                            buyerStateTwo = String(extractedData)
+                        } else if pdf417Code == "DAQ" {
+                            
+                            buyerDLIDTwo = String(extractedData)
                         }
+                        
+                        
+                        
+                        
+                        else if pdf417Code == "DBB" {
+                        
+                            B1DOB = String(extractedData)
+                        }
+                        
+                        
                     }
                 }
             }
-            print(buyerFirstNameTwo + " " + buyerLastNameTwo)
+            
             secondBuyerName = buyerFirstNameTwo.capitalizingFirstLetter() + " " + buyerLastNameTwo.capitalizingFirstLetter()
         case .failure(let error):
             print("Scanning failed: \(error.localizedDescription)")
@@ -293,11 +414,11 @@ struct PersonalDocuments: View {
 
 extension String {
     func capitalizingFirstLetter() -> String {
-      return prefix(1).uppercased() + self.lowercased().dropFirst()
+        return prefix(1).uppercased() + self.lowercased().dropFirst()
     }
-
+    
     mutating func capitalizeFirstLetter() {
-      self = self.capitalizingFirstLetter()
+        self = self.capitalizingFirstLetter()
     }
 }
 

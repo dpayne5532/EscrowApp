@@ -14,8 +14,8 @@ struct RealEstateOne: View {
     
     
     let videoUrl = URL(fileURLWithPath: Bundle.main.path(forResource: "RE04", ofType: "mp4")!)
-    let reVideo04 = URL(fileURLWithPath: Bundle.main.path(forResource: "Pexels Sea", ofType: "mp4")!)
-    let reVideo03 = URL(fileURLWithPath: Bundle.main.path(forResource: "hartIntro", ofType: "mp4")!)
+    let reVideo04 = URL(fileURLWithPath: Bundle.main.path(forResource: "RE04", ofType: "mp4")!)
+    let reVideo03 = URL(fileURLWithPath: Bundle.main.path(forResource: "RE04", ofType: "mp4")!)
     var body: some View {
         
        
