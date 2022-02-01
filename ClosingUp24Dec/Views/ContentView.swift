@@ -11,7 +11,7 @@ import AVFoundation
 
 
 class doneButtons: ObservableObject {
-    @Published var isDone1 = false
+    @State var isDone1 = true
     func flip() {
         isDone1.toggle()
     }
@@ -46,7 +46,7 @@ struct ContentView: View {
                                             Image(systemName: Bool(steve.isDone1) ? "square" : "checkmark.square")
                                                 .foregroundColor(.white)
                                             Text("Personal Documents")
-                                                .font(Font.custom("PaytoneOne-Regular", size: 16))
+                                                .font(Font.custom("MarcellusSC-Regular", size: 16))
                                                 .foregroundColor(.white)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
@@ -65,7 +65,7 @@ struct ContentView: View {
                                             Image(systemName: "square")
                                                 .foregroundColor(.white)
                                             Text("Real Estate Documents")
-                                                .font(Font.custom("PaytoneOne-Regular", size: 16))
+                                                .font(Font.custom("MarcellusSC-Regular", size: 16))
                                                 .foregroundColor(.white)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
@@ -83,7 +83,7 @@ struct ContentView: View {
                                                 .foregroundColor(.white)
                                             
                                             Text("Mortgage Documents")
-                                                .font(Font.custom("PaytoneOne-Regular", size: 16))
+                                                .font(Font.custom("MarcellusSC-Regular", size: 16))
                                                 .foregroundColor(.white)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
@@ -123,7 +123,7 @@ struct ContentView: View {
                                             Image(systemName: "questionmark.circle.fill")
                                                 .foregroundColor(.white)
                                             Text("Help")
-                                                .font(Font.custom("PaytoneOne-Regular", size: 16))
+                                                .font(Font.custom("MarcellusSC-Regular", size: 16))
                                                 .foregroundColor(.white)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)

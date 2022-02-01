@@ -47,7 +47,7 @@ struct VestingView: View {
             
             
             Text("Notice of Vesting")
-                .font(.largeTitle)
+                .font(Font.custom("MarcellusSC-Regular", size: 30))
                 .foregroundColor(.white)
                 .bold()
             

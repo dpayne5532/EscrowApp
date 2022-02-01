@@ -31,7 +31,7 @@ struct LoanDocs: View {
                 }) {
                     Text("LOAN DOCS HERE EVENTUALLY!")
                         .foregroundColor(.white)
-                        .font(Font.custom("PaytoneOne-Regular", size: 40))
+                        .font(Font.custom("MarcellusSC-Regular", size: 40))
                     
                 }
             }

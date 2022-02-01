@@ -23,7 +23,7 @@ struct TransferDecView: View {
                 }) {
                     Text("TRANSFER DEC HERE EVENTUALLY!")
                         .foregroundColor(.white)
-                        .font(Font.custom("PaytoneOne-Regular", size: 40))
+                        .font(Font.custom("MarcellusSC-Regular", size: 40))
                     
                 }
             }

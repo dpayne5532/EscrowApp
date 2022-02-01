@@ -41,7 +41,7 @@ struct VideoPlayerView: View {
             }
             }
                 Text("Affidavit & Indemnity")
-                    .font(.largeTitle)
+                    .font(Font.custom("MarcellusSC-Regular", size: 30))
                     .foregroundColor(.white)
                     .bold()
             

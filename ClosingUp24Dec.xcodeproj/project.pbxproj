@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36347A4D27A78FA00052705C /* MarcellusSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36347A4C27A78FA00052705C /* MarcellusSC-Regular.ttf */; };
 		364BC2EA277690E900AE7478 /* RealEstateOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364BC2E9277690E900AE7478 /* RealEstateOne.swift */; };
 		364BC30E2776CAE400AE7478 /* LoanDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364BC30D2776CAE400AE7478 /* LoanDocs.swift */; };
 		36587E50277FE79600ED0B9C /* VestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36587E4F277FE79600ED0B9C /* VestingView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36347A4C27A78FA00052705C /* MarcellusSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarcellusSC-Regular.ttf"; sourceTree = "<group>"; };
 		364BC2E9277690E900AE7478 /* RealEstateOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateOne.swift; sourceTree = "<group>"; };
 		364BC30D2776CAE400AE7478 /* LoanDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDocs.swift; sourceTree = "<group>"; };
 		36587E4F277FE79600ED0B9C /* VestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VestingView.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				36EAA9682776DF1700AC97B2 /* PaytoneOne-Regular.ttf */,
+				36347A4C27A78FA00052705C /* MarcellusSC-Regular.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				36E10F3C279BBD7800F32709 /* appguide.pdf in Resources */,
 				36CF8A932776896C007E68A3 /* Assets.xcassets in Resources */,
 				36BC54CD27A37643003422DF /* RE01.pdf in Resources */,
+				36347A4D27A78FA00052705C /* MarcellusSC-Regular.ttf in Resources */,
 				36BC54CB27A37434003422DF /* RE04.pdf in Resources */,
 				36BC54CF27A381F4003422DF /* RE04.mp4 in Resources */,
 			);

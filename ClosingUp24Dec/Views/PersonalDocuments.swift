@@ -135,6 +135,11 @@ struct PersonalDocuments: View {
             Color("rahDarkRed")
                 .ignoresSafeArea()
             VStack {
+              
+                
+                Spacer()
+                
+                
                 HStack {
                     Button { isShowingScanner = true
                         
@@ -147,7 +152,7 @@ struct PersonalDocuments: View {
                         .shadow(color: .black, radius: 10, x: 3, y: 3   )
                         .overlay(HStack {
                             Text(firstBuyerName)
-                                .font(Font.custom("PaytoneOne-Regular", size: 16))
+                                .font(Font.custom("MarcellusSC-Regular", size: 16))
                                 .foregroundColor(.white)
                                 .navigationBarTitle("")
                                 .navigationBarHidden(true)
@@ -167,7 +172,7 @@ struct PersonalDocuments: View {
                         .shadow(color: .black, radius: 10, x: 3, y: 3   )
                         .overlay(HStack {
                             Text(secondBuyerName)
-                                .font(Font.custom("PaytoneOne-Regular", size: 16))
+                                .font(Font.custom("MarcellusSC-Regular", size: 16))
                                 .foregroundColor(.white)
                                 .navigationBarTitle("")
                                 .navigationBarHidden(true)
@@ -182,54 +187,55 @@ struct PersonalDocuments: View {
                     VStack {
                     
                     Text("\(buyerFirstName) \(buyerMiddleName) \(buyerLastName)")
-                        .font(Font.custom("PaytoneOne-Regular", size: 20))
+                            .font(.title)
                         .bold()
-                        .padding(.leading, 50)
+                        .padding(.leading, 70)
                     
                     Text(buyerAddress)
-                            .font(Font.custom("PaytoneOne-Regular", size: 20))
+                            .font(.title)
                             .bold()
-                            .padding(.leading, 50)
+                            .padding(.leading, 70)
                         
                         
                         Text("\(buyerCity) \(buyerState)")
-                            .font(Font.custom("PaytoneOne-Regular", size: 20))
+                            .font(.title)
                             .bold()
-                            .padding(.leading, 50)
+                            .padding(.leading, 70)
                         
                         Text(buyerDLID)
-                            .font(Font.custom("PaytoneOne-Regular", size: 20))
+                            .font(.title)
                             .bold()
-                            .padding(.leading, 50)
+                            .padding(.leading, 70)
 
                         
                         
                         
                     }
                     
+                    
                     Spacer()
                     
                     VStack {
                     Text("\(buyerFirstNameTwo) \(buyerMiddleNameTwo) \(buyerLastNameTwo)")
                      
-                        .font(Font.custom("PaytoneOne-Regular", size: 20))
+                        .font(Font.custom("MarcellusSC-Regular", size: 25))
                         .bold()
-                        .padding(.trailing, 50)
+                        .padding(.trailing, 70)
                     Text(buyerAddressTwo)
-                            .font(Font.custom("PaytoneOne-Regular", size: 20))
+                            .font(Font.custom("MarcellusSC-Regular", size: 20))
                             .bold()
-                            .padding(.trailing, 50)
+                            .padding(.trailing, 70)
                         
                         
                         Text("\(buyerCityTwo) \(buyerStateTwo)")
-                            .font(Font.custom("PaytoneOne-Regular", size: 20))
+                            .font(Font.custom("MarcellusSC-Regular", size: 20))
                             .bold()
-                            .padding(.trailing, 50)
+                            .padding(.trailing, 70)
                         
                         Text(buyerDLIDTwo)
-                            .font(Font.custom("PaytoneOne-Regular", size: 20))
+                            .font(Font.custom("MarcellusSC-Regular", size: 20))
                             .bold()
-                            .padding(.trailing, 50)
+                            .padding(.trailing, 70)
                     }
                 }
            
@@ -242,7 +248,7 @@ struct PersonalDocuments: View {
                 }) {
                     Text("Tap Here When Complete")
                         .foregroundColor(.white)
-                        .font(Font.custom("PaytoneOne-Regular", size: 40))
+                        .font(Font.custom("MarcellusSC-Regular", size: 40))
                     
                 }
             }

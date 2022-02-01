@@ -23,7 +23,7 @@ struct AffidavitView: View {
                 }) {
                     Text("BUYER INDEMNITY HERE EVENTUALLY!")
                         .foregroundColor(.black)
-                        .font(Font.custom("PaytoneOne-Regular", size: 40))
+                        .font(Font.custom("MarcellusSC-Regular", size: 40))
                     
                 }
             }
