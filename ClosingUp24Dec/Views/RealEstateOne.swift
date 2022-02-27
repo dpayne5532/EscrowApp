@@ -43,8 +43,6 @@ struct RealEstateOne: View {
                                     .navigationBarHidden(true)
                             })
                     }
-                    
-                    
                     NavigationLink(destination: TransferDecView()) {
                         RoundedRectangle(cornerRadius: 25)
                             .fill(RadialGradient(gradient: Gradient(colors: [Color("rahRed"), .black]), center: .center, startRadius: 40, endRadius: 200))
@@ -96,9 +94,6 @@ struct RealEstateOne: View {
                                     .navigationBarHidden(true)
                             })
                     }
-                    
-                    
-                    
                     Spacer()
                     Image("logobozo")
                         .resizable()
@@ -108,6 +103,7 @@ struct RealEstateOne: View {
                     
                         .opacity(0.8)
                 }
+               
                 
                 
                 Spacer()
@@ -118,19 +114,19 @@ struct RealEstateOne: View {
                     }
                 label: {
                     
-                    HStack {
+                   
                         
                         Spacer()
                         Image(systemName: "xmark")
                             .foregroundColor(.black)
                             .imageScale(.large)
                             .frame(width: 44, height: 44)
-                        
-                        
-                        
-                    }
+                    
                 }
                     Spacer()
+                    Spacer()
+                    
+                    HStack {
                     Spacer()
                     NavigationLink(destination: HelpView()) {
                         RoundedRectangle(cornerRadius: 25)
@@ -147,7 +143,7 @@ struct RealEstateOne: View {
                                     .navigationBarTitle("")
                                     .navigationBarHidden(true)
                             })
-                    }
+                    }}
                 }
             }
         }

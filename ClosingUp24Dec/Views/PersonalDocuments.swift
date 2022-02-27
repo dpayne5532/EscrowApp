@@ -14,26 +14,19 @@ import SwiftUI
 struct PersonalDocuments: View {
     @State private var isShowingScanner = false
     @State private var isShowingScannerTwo = false
+    
+    @State var buyerOne = BuyerOne()
+    @State var buyerTwo = BuyerTwo()
+    
     @State private var firstBuyerName = "Buyer One"
     @State private var secondBuyerName = "Buyer Two"
-    @State private var buyerFirstName = ""
-    @State private var buyerMiddleName = ""
-    @State private var buyerLastName = ""
-    @State private var buyerFirstNameTwo = ""
-    @State private var buyerMiddleNameTwo = ""
-    @State private var buyerLastNameTwo = ""
+    
+    
+    
     @State private var B1DOB = "01/01/1971"
     @State private var B2DOB = "00/00/0000"
     
     
-    @State private var buyerAddress = ""
-    @State private var buyerCity = ""
-    @State private var buyerState = ""
-    @State private var buyerDLID = ""
-    @State private var buyerAddressTwo = ""
-    @State private var buyerCityTwo = ""
-    @State private var buyerStateTwo = ""
-    @State private var buyerDLIDTwo = ""
     
     private let pdf417Map: [String: String] = [
         "DAA":"Full Name",
@@ -135,7 +128,7 @@ struct PersonalDocuments: View {
             Color("rahDarkRed")
                 .ignoresSafeArea()
             VStack {
-              
+                
                 
                 Spacer()
                 
@@ -183,30 +176,42 @@ struct PersonalDocuments: View {
                 
                 
                 HStack {
-                
+                    
                     VStack {
-                    
-                    Text("\(buyerFirstName) \(buyerMiddleName) \(buyerLastName)")
-                            .font(.title)
-                        .bold()
-                        .padding(.leading, 70)
-                    
-                    Text(buyerAddress)
-                            .font(.title)
+                        
+                        Text("\(buyerOne.firstName) \(buyerOne.middleName) \(buyerOne.lastName)")
+                            .font(Font.custom("MarcellusSC-Regular", size: 25))
+                            .bold()
+                            .padding(.leading, 70)
+                        
+                        Text(buyerOne.address)
+                            .font(Font.custom("MarcellusSC-Regular", size: 20))
+                            .bold()
+                            .padding(.leading, 70)
+                        
+                        Text(buyerOne.addressSecond)
+                            .font(Font.custom("MarcellusSC-Regular", size: 20))
                             .bold()
                             .padding(.leading, 70)
                         
                         
-                        Text("\(buyerCity) \(buyerState)")
-                            .font(.title)
+                        Text("\(buyerOne.city) \(buyerOne.state)")
+                            .font(Font.custom("MarcellusSC-Regular", size: 20))
                             .bold()
                             .padding(.leading, 70)
                         
-                        Text(buyerDLID)
-                            .font(.title)
+                        Text(buyerOne.gotDL ? "ID Number: \(buyerOne.DLID)" : "")
+                            .font(Font.custom("MarcellusSC-Regular", size: 20))
                             .bold()
                             .padding(.leading, 70)
-
+                        
+                        Text(buyerOne.gotDL ? "Expires: \(buyerOne.dlExpire)" : "")
+                            .font(Font.custom("MarcellusSC-Regular", size: 20))
+                            .bold()
+                            .padding(.leading, 70)
+                        
+                        
+                        
                         
                         
                         
@@ -216,29 +221,39 @@ struct PersonalDocuments: View {
                     Spacer()
                     
                     VStack {
-                    Text("\(buyerFirstNameTwo) \(buyerMiddleNameTwo) \(buyerLastNameTwo)")
-                     
-                        .font(Font.custom("MarcellusSC-Regular", size: 25))
-                        .bold()
-                        .padding(.trailing, 70)
-                    Text(buyerAddressTwo)
+                        Text("\(buyerTwo.firstName) \(buyerTwo.middleName) \(buyerTwo.lastName)")
+                        
+                            .font(Font.custom("MarcellusSC-Regular", size: 25))
+                            .bold()
+                            .padding(.trailing, 70)
+                        
+                        Text(buyerTwo.address)
                             .font(Font.custom("MarcellusSC-Regular", size: 20))
                             .bold()
                             .padding(.trailing, 70)
                         
-                        
-                        Text("\(buyerCityTwo) \(buyerStateTwo)")
+                        Text(buyerTwo.addressSecond)
                             .font(Font.custom("MarcellusSC-Regular", size: 20))
                             .bold()
                             .padding(.trailing, 70)
                         
-                        Text(buyerDLIDTwo)
+                        Text("\(buyerTwo.city) \(buyerTwo.state)")
+                            .font(Font.custom("MarcellusSC-Regular", size: 20))
+                            .bold()
+                            .padding(.trailing, 70)
+                        
+                        Text(buyerTwo.gotDL ? "ID Number: \(buyerTwo.DLID)" : "")
+                            .font(Font.custom("MarcellusSC-Regular", size: 20))
+                            .bold()
+                            .padding(.trailing, 70)
+                        
+                        Text(buyerTwo.gotDL ? "Expires: \(buyerTwo.dlExpire)" : "")
                             .font(Font.custom("MarcellusSC-Regular", size: 20))
                             .bold()
                             .padding(.trailing, 70)
                     }
                 }
-           
+                
                 
                 Spacer()
                 
@@ -248,11 +263,11 @@ struct PersonalDocuments: View {
                 }) {
                     Text("Tap Here When Complete")
                         .foregroundColor(.white)
-                        .font(Font.custom("MarcellusSC-Regular", size: 40))
+                        .font(Font.custom("PaytoneOne-Regular", size: 40))
                     
                 }
             }
-            .navigationBarTitle("")
+            
             .navigationBarBackButtonHidden(true)
             .navigationBarHidden(true)
             
@@ -299,41 +314,49 @@ struct PersonalDocuments: View {
                         
                         if pdf417Code == "DAC" {
                             
-                            buyerFirstName = String(extractedData)
-                        
+                            buyerOne.firstName = String(extractedData)
+                            
                         } else if pdf417Code == "DCS" {
                             
-                            buyerLastName = String(extractedData)
-                        
+                            buyerOne.lastName = String(extractedData)
+                            
                         } else if pdf417Code == "DAD" {
                             
-                            buyerMiddleName = String(extractedData)
+                            buyerOne.middleName = String(extractedData)
                         } else if pdf417Code == "DAG" {
                             
-                            buyerAddress = String(extractedData)
+                            buyerOne.address = String(extractedData)
                         } else if pdf417Code == "DAI" {
                             
-                            buyerCity = String(extractedData)
+                            buyerOne.city = String(extractedData)
                         } else if pdf417Code == "DAJ" {
                             
-                            buyerState = String(extractedData)
+                            buyerOne.state = String(extractedData)
                         } else if pdf417Code == "DAQ" {
                             
-                            buyerDLID = String(extractedData)
+                            buyerOne.DLID = String(extractedData)
+                            buyerOne.gotDL = true
+                            
+                        } else if pdf417Code == "DAH" {
+                            
+                            buyerOne.addressSecond = String(extractedData)
+                        } else if pdf417Code == "DBA" {
+                            
+                            buyerOne.dlExpire = String(extractedData)
                         }
                         
                         
                         
                         
                         else if pdf417Code == "DBB" {
-                        
+                            
                             B1DOB = String(extractedData)
                         }
                     }
                 }
             }
-            print(buyerFirstName + " " + buyerLastName)
-            firstBuyerName = buyerFirstName.capitalizingFirstLetter() + " " + buyerLastName.capitalizingFirstLetter()
+            print(buyerOne.firstName + " " + buyerOne.lastName)
+            firstBuyerName = buyerOne.firstName.capitalizingFirstLetter() + " " + buyerOne.lastName.capitalizingFirstLetter()
         case .failure(let error):
             print("Scanning failed: \(error.localizedDescription)")
             
@@ -369,33 +392,41 @@ struct PersonalDocuments: View {
                         print("Extracted Data: \(extractedData)")
                         
                         if pdf417Code == "DAC" {
-                           
-                            buyerFirstNameTwo = String(extractedData)
+                            
+                            buyerTwo.firstName = String(extractedData)
                         } else if pdf417Code == "DCS" {
                             
-                            buyerLastNameTwo = String(extractedData)
+                            buyerTwo.lastName = String(extractedData)
                         } else if pdf417Code == "DAD" {
                             
-                            buyerMiddleNameTwo = String(extractedData)
+                            buyerTwo.middleName = String(extractedData)
                         } else if pdf417Code == "DAG" {
                             
-                            buyerAddressTwo = String(extractedData)
+                            buyerTwo.address = String(extractedData)
                         } else if pdf417Code == "DAI" {
                             
-                            buyerCityTwo = String(extractedData)
+                            buyerTwo.city = String(extractedData)
                         } else if pdf417Code == "DAJ" {
                             
-                            buyerStateTwo = String(extractedData)
+                            buyerTwo.state = String(extractedData)
                         } else if pdf417Code == "DAQ" {
                             
-                            buyerDLIDTwo = String(extractedData)
+                            buyerTwo.DLID = String(extractedData)
+                            buyerTwo.gotDL = true
+                            
+                        } else if pdf417Code == "DAH" {
+                            
+                            buyerTwo.addressSecond = String(extractedData)
+                        } else if pdf417Code == "DBA" {
+                            
+                            buyerTwo.dlExpire = String(extractedData)
                         }
                         
                         
                         
                         
                         else if pdf417Code == "DBB" {
-                        
+                            
                             B1DOB = String(extractedData)
                         }
                         
@@ -404,7 +435,7 @@ struct PersonalDocuments: View {
                 }
             }
             
-            secondBuyerName = buyerFirstNameTwo.capitalizingFirstLetter() + " " + buyerLastNameTwo.capitalizingFirstLetter()
+            secondBuyerName = buyerTwo.firstName.capitalizingFirstLetter() + " " + buyerTwo.lastName.capitalizingFirstLetter()
         case .failure(let error):
             print("Scanning failed: \(error.localizedDescription)")
             

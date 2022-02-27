@@ -2,9 +2,10 @@
 //  TransferDecView.swift
 //  ClosingUp24Dec
 //
-//  Created by Dan Payne on 12/31/21.
+//  Created by Dan Payne on 1/31/22.
 //
 
+import Foundation
 import SwiftUI
 
 struct TransferDecView: View {

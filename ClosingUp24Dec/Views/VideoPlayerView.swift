@@ -23,14 +23,17 @@ struct VideoPlayerView: View {
         
             VStack {
             
+                HStack {
+                    Spacer()
+                      
                 Button {
                     self.presentationMode.wrappedValue.dismiss()
                 }
             label: {
                 
-                HStack {
+              
                 
-                    Spacer()
+                    
                 Image(systemName: "xmark")
                         .foregroundColor(.black)
                     .imageScale(.large)

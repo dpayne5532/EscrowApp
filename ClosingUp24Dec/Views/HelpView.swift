@@ -36,6 +36,7 @@ struct HelpView: View {
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)
                                         })
+                                    
                                 }
                                 NavigationLink(destination: RealEstateOne()) {
                                     RoundedRectangle(cornerRadius: 25)
@@ -90,8 +91,12 @@ struct HelpView: View {
                 
                 
             }
+           
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        .navigationBarTitle("")
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
         
 }

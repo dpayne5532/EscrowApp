@@ -37,7 +37,7 @@ class UIVideoPlayer: UIView {
          
       
         
-        guard let url = Bundle.main.url(forResource: "hartIntro2", withExtension: "mp4") else { return }
+        guard let url = Bundle.main.url(forResource: "danIntro2", withExtension: "mp4") else { return }
         
     
         let player = AVPlayer(url: url)

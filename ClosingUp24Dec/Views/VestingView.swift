@@ -47,9 +47,10 @@ struct VestingView: View {
             
             
             Text("Notice of Vesting")
-                .font(Font.custom("MarcellusSC-Regular", size: 30))
+                .font(Font.custom("MarcellusSC-Regular", size: 60))
                 .foregroundColor(.white)
                 .bold()
+                
             
      
             
@@ -67,7 +68,7 @@ struct VestingView: View {
 
             PDFKitView(url: documentURL)
         }
-        
+        .navigationBarBackButtonHidden(true)
         .foregroundColor(.black)
         .navigationBarTitle("")
         .navigationBarHidden(true)

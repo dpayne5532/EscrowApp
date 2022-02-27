@@ -8,7 +8,11 @@ import SwiftUI
 import AVFoundation
 
 
-
+struct CheckBox {
+    
+    @Binding var checkIt: Bool
+    
+}
 
 class doneButtons: ObservableObject {
     @State var isDone1 = true
@@ -23,7 +27,13 @@ struct ContentView: View {
   
     let videoUrl = URL(fileURLWithPath: Bundle.main.path(forResource: "RE04", ofType: "mp4")!)
    @StateObject var steve = doneButtons()
+ 
     
+    
+    
+    @State var buyerOne = BuyerOne()
+    @State var buyerTwo = BuyerTwo()
+        
     var body: some View {
         NavigationView {
             ZStack {
@@ -43,7 +53,7 @@ struct ContentView: View {
                                         .frame(width: 280, height: 70)
                                         .shadow(color: .black, radius: 10, x: 3, y: 3)
                                         .overlay(HStack {
-                                            Image(systemName: Bool(steve.isDone1) ? "square" : "checkmark.square")
+                                            Image(systemName: buyerOne.gotDL ? "checkmark.square" : "square")
                                                 .foregroundColor(.white)
                                             Text("Personal Documents")
                                                 .font(Font.custom("MarcellusSC-Regular", size: 16))
@@ -123,7 +133,7 @@ struct ContentView: View {
                                             Image(systemName: "questionmark.circle.fill")
                                                 .foregroundColor(.white)
                                             Text("Help")
-                                                .font(Font.custom("MarcellusSC-Regular", size: 16))
+                                                .font(Font.custom("PaytoneOne-Regular", size: 16))
                                                 .foregroundColor(.white)
                                                 .navigationBarTitle("")
                                                 .navigationBarHidden(true)

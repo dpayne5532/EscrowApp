@@ -65,7 +65,7 @@ struct ClosingInstructionsView: View {
 
             PDFKitView(url: documentURL)
         }
-        
+        .navigationBarBackButtonHidden(true)
         .foregroundColor(.black)
         .navigationBarTitle("")
         .navigationBarHidden(true)
