@@ -95,7 +95,7 @@ struct HelpView: View {
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .navigationBarTitle("")
-        .navigationBarBackButtonHidden(true)
+        .navigationBarBackButtonHidden(false)
         .navigationBarHidden(true)
     }
         
