@@ -34,7 +34,7 @@ struct RealEstateOne: View {
                             .frame(width: 280, height: 70)
                             .shadow(color: .black, radius: 10, x: 3, y: 3)
                             .overlay(HStack {
-                                Image(systemName: "square")
+                                Image(systemName: "checkmark.square")
                                     .foregroundColor(.white)
                                 Text("Notice of Vesting")
                                     .font(Font.custom("MarcellusSC-Regular", size: 16))
@@ -50,7 +50,7 @@ struct RealEstateOne: View {
                             .frame(width: 280, height: 70)
                             .shadow(color: .black, radius: 10, x: 3, y: 3)
                             .overlay(HStack {
-                                Image(systemName: "square")
+                                Image(systemName: "checkmark.square")
                                     .foregroundColor(.white)
                                 
                                 Text("Transfer Declaration")
@@ -67,7 +67,7 @@ struct RealEstateOne: View {
                             .frame(width: 280, height: 70)
                             .shadow(color: .black, radius: 10, x: 3, y: 3)
                             .overlay(HStack {
-                                Image(systemName: "square")
+                                Image(systemName: "checkmark.square")
                                     .foregroundColor(.white)
                                 
                                 Text("Closing Instructions")
@@ -94,6 +94,62 @@ struct RealEstateOne: View {
                                     .navigationBarHidden(true)
                             })
                     }
+                    NavigationLink(destination: VideoPlayerView(url: videoUrl)) {
+                        RoundedRectangle(cornerRadius: 25)
+                            .fill(RadialGradient(gradient: Gradient(colors: [Color("rahRed"), .black]), center: .center, startRadius: 40, endRadius: 200))
+                            .padding(.horizontal)
+                            .frame(width: 280, height: 70)
+                            .shadow(color: .black, radius: 10, x: 3, y: 3)
+                            .overlay(HStack {
+                                Image(systemName: "square")
+                                    .foregroundColor(.white)
+                                
+                                Text("Tax/Utility/HOA")
+                                    .font(Font.custom("MarcellusSC-Regular", size: 16))
+                                    .foregroundColor(.white)
+                                    .navigationBarTitle("")
+                                    .navigationBarHidden(true)
+                            })
+                    }
+                    NavigationLink(destination: VideoPlayerView(url: videoUrl)) {
+                        RoundedRectangle(cornerRadius: 25)
+                            .fill(RadialGradient(gradient: Gradient(colors: [Color("rahRed"), .black]), center: .center, startRadius: 40, endRadius: 200))
+                            .padding(.horizontal)
+                            .frame(width: 280, height: 70)
+                            .shadow(color: .black, radius: 10, x: 3, y: 3)
+                            .overlay(HStack {
+                                Image(systemName: "square")
+                                    .foregroundColor(.white)
+                                
+                                Text("Title Insurance")
+                                    .font(Font.custom("MarcellusSC-Regular", size: 16))
+                                    .foregroundColor(.white)
+                                    .navigationBarTitle("")
+                                    .navigationBarHidden(true)
+                            })
+                    }
+                    NavigationLink(destination: VideoPlayerView(url: videoUrl)) {
+                        RoundedRectangle(cornerRadius: 25)
+                            .fill(RadialGradient(gradient: Gradient(colors: [Color("rahRed"), .black]), center: .center, startRadius: 40, endRadius: 200))
+                            .padding(.horizontal)
+                            .frame(width: 280, height: 70)
+                            .shadow(color: .black, radius: 10, x: 3, y: 3)
+                            .overlay(HStack {
+                                Image(systemName: "square")
+                                    .foregroundColor(.white)
+                                
+                                Text("Utility Transfer")
+                                    .font(Font.custom("MarcellusSC-Regular", size: 16))
+                                    .foregroundColor(.white)
+                                    .navigationBarTitle("")
+                                    .navigationBarHidden(true)
+                            })
+                    }
+                    
+                    
+                    
+                    
+                    
                     Spacer()
                     Image("logobozo")
                         .resizable()

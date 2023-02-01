@@ -53,7 +53,7 @@ struct ContentView: View {
                                         .frame(width: 280, height: 70)
                                         .shadow(color: .black, radius: 10, x: 3, y: 3)
                                         .overlay(HStack {
-                                            Image(systemName: buyerOne.gotDL ? "checkmark.square" : "square")
+                                            Image(systemName: !buyerOne.gotDL ? "checkmark.square" : "square")
                                                 .foregroundColor(.white)
                                             Text("Personal Documents")
                                                 .font(Font.custom("MarcellusSC-Regular", size: 16))

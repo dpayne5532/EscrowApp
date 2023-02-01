@@ -24,18 +24,7 @@ class UIVideoPlayer: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        
-      
-        
-        
-        
-        
-        
-        
-        
-        
-         
-      
+
         
         guard let url = Bundle.main.url(forResource: "danIntro2", withExtension: "mp4") else { return }
         
