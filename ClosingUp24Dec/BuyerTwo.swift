@@ -10,19 +10,19 @@ import SwiftUI
 
 
 class BuyerTwo: ObservableObject {
-    
-    @Published var gotDL = false
-    
-    @Published var firstName = ""
-    @Published var middleName = ""
-    @Published var lastName = ""
-    
-    @Published var address = ""
-    @Published var addressSecond = ""
-    @Published var city = ""
-    @Published var state = ""
-    @Published var DLID = ""
-    
-    @Published var dlExpire = ""
-
+  
+  @Published var gotDL = false
+  
+  @Published var firstName = ""
+  @Published var middleName = ""
+  @Published var lastName = ""
+  
+  @Published var address = ""
+  @Published var addressSecond = ""
+  @Published var city = ""
+  @Published var state = ""
+  @Published var DLID = ""
+  
+  @Published var dlExpire = ""
+  
 }
