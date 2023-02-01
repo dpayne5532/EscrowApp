@@ -50,7 +50,7 @@ struct VideoPlayerView: View {
             .imageScale(.large)
             .frame(width: 44, height: 44)
           
-          
+         
           
         }
         }

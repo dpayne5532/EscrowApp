@@ -210,7 +210,7 @@ struct RealEstateOne_Previews: PreviewProvider {
     RealEstateOne()
   }
 }
-
+ 
 struct ExtractedView: View {
   var body: some View {
     NavigationLink(destination: RealEstateOne()) {

@@ -61,7 +61,7 @@ struct ClosingInstructionsView: View {
         Spacer()
         
         
-        
+         
         
         PDFKitView(url: documentURL)
       }

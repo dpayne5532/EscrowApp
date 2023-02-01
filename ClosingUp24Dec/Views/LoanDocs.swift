@@ -43,7 +43,7 @@ struct LoanDocs: View {
     
   }
 }
-
+ 
 struct LoanDocs_Previews: PreviewProvider {
   static var previews: some View {
     LoanDocs()

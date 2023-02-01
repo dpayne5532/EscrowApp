@@ -34,7 +34,7 @@ struct AffidavitView: View {
     }
   }
 }
-
+ 
 struct AffidavitView_Previews: PreviewProvider {
   static var previews: some View {
     AffidavitView()
