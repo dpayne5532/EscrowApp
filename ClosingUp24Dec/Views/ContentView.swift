@@ -9,150 +9,150 @@ import AVFoundation
 
 
 struct CheckBox {
-    
-    @Binding var checkIt: Bool
-    
+  
+  @Binding var checkIt: Bool
+  
 }
 
 class doneButtons: ObservableObject {
-    @State var isDone1 = true
-    func flip() {
-        isDone1.toggle()
-    }
-    
+  @State var isDone1 = true
+  func flip() {
+    isDone1.toggle()
+  }
+  
 }
 
 struct ContentView: View {
-    
   
-    let videoUrl = URL(fileURLWithPath: Bundle.main.path(forResource: "RE04", ofType: "mp4")!)
-   @StateObject var steve = doneButtons()
- 
-    
-    
-    
-    @State var buyerOne = BuyerOne()
-    @State var buyerTwo = BuyerTwo()
+  
+  let videoUrl = URL(fileURLWithPath: Bundle.main.path(forResource: "RE04", ofType: "mp4")!)
+  @StateObject var steve = doneButtons()
+  
+  
+  
+  
+  @State var buyerOne = BuyerOne()
+  @State var buyerTwo = BuyerTwo()
+  
+  var body: some View {
+    NavigationView {
+      ZStack {
+        PlayerView()
+          .edgesIgnoringSafeArea(.all)
+          .overlay(
+            HStack {
+              
+              
+              
+              VStack {
+                Spacer()
+                NavigationLink(destination: PersonalDocuments()) {
+                  RoundedRectangle(cornerRadius: 25)
+                    .fill(RadialGradient(gradient: Gradient(colors: [Color("rahRed"), .black]), center: .center, startRadius: 40, endRadius: 200))
+                    .padding(.horizontal)
+                    .frame(width: 280, height: 70)
+                    .shadow(color: .black, radius: 10, x: 3, y: 3)
+                    .overlay(HStack {
+                      Image(systemName: !buyerOne.gotDL ? "checkmark.square" : "square")
+                        .foregroundColor(.white)
+                      Text("Personal Documents")
+                        .font(Font.custom("MarcellusSC-Regular", size: 16))
+                        .foregroundColor(.white)
+                        .navigationBarTitle("")
+                        .navigationBarHidden(true)
+                    }
+                             
+                    )
+                  
+                }
+                NavigationLink(destination: RealEstateOne()) {
+                  RoundedRectangle(cornerRadius: 25)
+                    .fill(RadialGradient(gradient: Gradient(colors: [Color("rahRed"), .black]), center: .center, startRadius: 40, endRadius: 200))
+                    .padding(.horizontal)
+                    .frame(width: 280, height: 70)
+                    .shadow(color: .black, radius: 10, x: 3, y: 3)
+                    .overlay(HStack {
+                      Image(systemName: "square")
+                        .foregroundColor(.white)
+                      Text("Real Estate Documents")
+                        .font(Font.custom("MarcellusSC-Regular", size: 16))
+                        .foregroundColor(.white)
+                        .navigationBarTitle("")
+                        .navigationBarHidden(true)
+                    })
+                }
+                
+                NavigationLink(destination: LoanDocs()) {
+                  RoundedRectangle(cornerRadius: 25)
+                    .fill(RadialGradient(gradient: Gradient(colors: [Color("rahRed"), .black]), center: .center, startRadius: 40, endRadius: 200))
+                    .padding(.horizontal)
+                    .frame(width: 280, height: 70)
+                    .shadow(color: .black, radius: 10, x: 3, y: 3)
+                    .overlay(HStack {
+                      Image(systemName: "square")
+                        .foregroundColor(.white)
+                      
+                      Text("Mortgage Documents")
+                        .font(Font.custom("MarcellusSC-Regular", size: 16))
+                        .foregroundColor(.white)
+                        .navigationBarTitle("")
+                        .navigationBarHidden(true)
+                    })
+                }
+                
+                Spacer()
+                Spacer()
+                Spacer()
+                
+                
+                HStack {
+                  Image("logobozo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 300)
+                    .padding()
+                  
+                    .opacity(0.8)
+                  
+                  
+                  
+                  
+                }}
+              Spacer()
+              
+              VStack {
+                Spacer()
+                Spacer()
+                NavigationLink(destination: HelpView()) {
+                  RoundedRectangle(cornerRadius: 25)
+                    .fill(Color("rahRed"))
+                    .padding(.all)
+                    .frame(width: 130, height: 80)
+                    .shadow(color: .black, radius: 10, x: 3, y: 3)
+                    .overlay(HStack {
+                      Image(systemName: "questionmark.circle.fill")
+                        .foregroundColor(.white)
+                      Text("Help")
+                        .font(Font.custom("PaytoneOne-Regular", size: 16))
+                        .foregroundColor(.white)
+                        .navigationBarTitle("")
+                        .navigationBarHidden(true)
+                    })
+                }
+              }
+            })
         
-    var body: some View {
-        NavigationView {
-            ZStack {
-                PlayerView()
-                    .edgesIgnoringSafeArea(.all)
-                    .overlay(
-                        HStack {
-                            
-
-                            
-                            VStack {
-                                Spacer()
-                                NavigationLink(destination: PersonalDocuments()) {
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .fill(RadialGradient(gradient: Gradient(colors: [Color("rahRed"), .black]), center: .center, startRadius: 40, endRadius: 200))
-                                        .padding(.horizontal)
-                                        .frame(width: 280, height: 70)
-                                        .shadow(color: .black, radius: 10, x: 3, y: 3)
-                                        .overlay(HStack {
-                                            Image(systemName: !buyerOne.gotDL ? "checkmark.square" : "square")
-                                                .foregroundColor(.white)
-                                            Text("Personal Documents")
-                                                .font(Font.custom("MarcellusSC-Regular", size: 16))
-                                                .foregroundColor(.white)
-                                                .navigationBarTitle("")
-                                                .navigationBarHidden(true)
-                                        }
-                                                 
-                                        )
-                                    
-                                }
-                                NavigationLink(destination: RealEstateOne()) {
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .fill(RadialGradient(gradient: Gradient(colors: [Color("rahRed"), .black]), center: .center, startRadius: 40, endRadius: 200))
-                                        .padding(.horizontal)
-                                        .frame(width: 280, height: 70)
-                                        .shadow(color: .black, radius: 10, x: 3, y: 3)
-                                        .overlay(HStack {
-                                            Image(systemName: "square")
-                                                .foregroundColor(.white)
-                                            Text("Real Estate Documents")
-                                                .font(Font.custom("MarcellusSC-Regular", size: 16))
-                                                .foregroundColor(.white)
-                                                .navigationBarTitle("")
-                                                .navigationBarHidden(true)
-                                        })
-                                }
-                                
-                                NavigationLink(destination: LoanDocs()) {
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .fill(RadialGradient(gradient: Gradient(colors: [Color("rahRed"), .black]), center: .center, startRadius: 40, endRadius: 200))
-                                        .padding(.horizontal)
-                                        .frame(width: 280, height: 70)
-                                        .shadow(color: .black, radius: 10, x: 3, y: 3)
-                                        .overlay(HStack {
-                                            Image(systemName: "square")
-                                                .foregroundColor(.white)
-                                            
-                                            Text("Mortgage Documents")
-                                                .font(Font.custom("MarcellusSC-Regular", size: 16))
-                                                .foregroundColor(.white)
-                                                .navigationBarTitle("")
-                                                .navigationBarHidden(true)
-                                        })
-                                }
-                                
-                                Spacer()
-                                Spacer()
-                                Spacer()
-                               
-                                
-                                HStack {
-                                Image("logobozo")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 300)
-                                    .padding()
-                                
-                                    .opacity(0.8)
-                                
-                               
-                                
-                                
-                                }}
-                            Spacer()
-                            
-                            VStack {
-                                Spacer()
-                                Spacer()
-                                NavigationLink(destination: HelpView()) {
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .fill(Color("rahRed"))
-                                        .padding(.all)
-                                        .frame(width: 130, height: 80)
-                                        .shadow(color: .black, radius: 10, x: 3, y: 3)
-                                        .overlay(HStack {
-                                            Image(systemName: "questionmark.circle.fill")
-                                                .foregroundColor(.white)
-                                            Text("Help")
-                                                .font(Font.custom("PaytoneOne-Regular", size: 16))
-                                                .foregroundColor(.white)
-                                                .navigationBarTitle("")
-                                                .navigationBarHidden(true)
-                                        })
-                                }
-                            }
-                        })
-                
-                
-            }
-           
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
+        
+      }
+      
     }
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
+    .navigationViewStyle(StackNavigationViewStyle())
+  }
+  struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+      ContentView()
     }
+  }
 }
 
 

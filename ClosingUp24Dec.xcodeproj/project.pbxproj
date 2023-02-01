@@ -11,12 +11,11 @@
 		36347A4D27A78FA00052705C /* MarcellusSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36347A4C27A78FA00052705C /* MarcellusSC-Regular.ttf */; };
 		364BC2EA277690E900AE7478 /* RealEstateOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364BC2E9277690E900AE7478 /* RealEstateOne.swift */; };
 		364BC30E2776CAE400AE7478 /* LoanDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364BC30D2776CAE400AE7478 /* LoanDocs.swift */; };
-		364CBBCC27C5DE3300096D73 /* danIntro2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 364CBBCB27C5DE3300096D73 /* danIntro2.mp4 */; };
 		36587E50277FE79600ED0B9C /* VestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36587E4F277FE79600ED0B9C /* VestingView.swift */; };
 		36587E54277FE80B00ED0B9C /* ClosingInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36587E53277FE80B00ED0B9C /* ClosingInstructionsView.swift */; };
 		36587E56277FE83100ED0B9C /* AffidavitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36587E55277FE83100ED0B9C /* AffidavitView.swift */; };
-		369F57D0279F842B002A1226 /* hartIntro2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 369F57CF279F842B002A1226 /* hartIntro2.mp4 */; };
 		36A35B7A27D0531B007E0C25 /* RE04.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 36A35B7927D0531B007E0C25 /* RE04.mp4 */; };
+		36AD0318298AE347007CCAAC /* danIntro2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 36AD0317298AE347007CCAAC /* danIntro2.mp4 */; };
 		36B25C0027A66AE300807DFD /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 36B25BFF27A66AE300807DFD /* CodeScanner */; };
 		36BC54CB27A37434003422DF /* RE04.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 36BC54CA27A37434003422DF /* RE04.pdf */; };
 		36BC54CD27A37643003422DF /* RE01.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 36BC54CC27A37643003422DF /* RE01.pdf */; };
@@ -44,12 +43,11 @@
 		36347A4C27A78FA00052705C /* MarcellusSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarcellusSC-Regular.ttf"; sourceTree = "<group>"; };
 		364BC2E9277690E900AE7478 /* RealEstateOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateOne.swift; sourceTree = "<group>"; };
 		364BC30D2776CAE400AE7478 /* LoanDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDocs.swift; sourceTree = "<group>"; };
-		364CBBCB27C5DE3300096D73 /* danIntro2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = danIntro2.mp4; sourceTree = "<group>"; };
 		36587E4F277FE79600ED0B9C /* VestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VestingView.swift; sourceTree = "<group>"; };
 		36587E53277FE80B00ED0B9C /* ClosingInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosingInstructionsView.swift; sourceTree = "<group>"; };
 		36587E55277FE83100ED0B9C /* AffidavitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffidavitView.swift; sourceTree = "<group>"; };
-		369F57CF279F842B002A1226 /* hartIntro2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hartIntro2.mp4; sourceTree = "<group>"; };
 		36A35B7927D0531B007E0C25 /* RE04.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RE04.mp4; sourceTree = "<group>"; };
+		36AD0317298AE347007CCAAC /* danIntro2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = danIntro2.mp4; sourceTree = "<group>"; };
 		36BC54CA27A37434003422DF /* RE04.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = RE04.pdf; sourceTree = "<group>"; };
 		36BC54CC27A37643003422DF /* RE01.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = RE01.pdf; sourceTree = "<group>"; };
 		36BC54D027A389D3003422DF /* RE03.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = RE03.pdf; sourceTree = "<group>"; };
@@ -131,9 +129,8 @@
 		36CF8AA227768F3D007E68A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				364CBBCB27C5DE3300096D73 /* danIntro2.mp4 */,
+				36AD0317298AE347007CCAAC /* danIntro2.mp4 */,
 				36A35B7927D0531B007E0C25 /* RE04.mp4 */,
-				369F57CF279F842B002A1226 /* hartIntro2.mp4 */,
 				36E10F3F279BC35E00F32709 /* reDocs.pdf */,
 				36BC54CC27A37643003422DF /* RE01.pdf */,
 				36BC54D027A389D3003422DF /* RE03.pdf */,
@@ -228,9 +225,8 @@
 			files = (
 				36E10F40279BC35E00F32709 /* reDocs.pdf in Resources */,
 				36EAA9692776DF1700AC97B2 /* PaytoneOne-Regular.ttf in Resources */,
+				36AD0318298AE347007CCAAC /* danIntro2.mp4 in Resources */,
 				36CF8A962776896C007E68A3 /* Preview Assets.xcassets in Resources */,
-				369F57D0279F842B002A1226 /* hartIntro2.mp4 in Resources */,
-				364CBBCC27C5DE3300096D73 /* danIntro2.mp4 in Resources */,
 				36EAA96C2776F0E900AC97B2 /* Launch Screen.storyboard in Resources */,
 				36BC54D127A389D3003422DF /* RE03.pdf in Resources */,
 				36CF8A932776896C007E68A3 /* Assets.xcassets in Resources */,

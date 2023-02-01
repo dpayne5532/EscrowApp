@@ -9,13 +9,13 @@ import SwiftUI
 
 @main
 struct ClosingUp24DecApp: App {
-    var body: some Scene {
-        
-        
-        
-        
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    
+    
+    
+    
+    WindowGroup {
+      ContentView()
     }
+  }
 }
